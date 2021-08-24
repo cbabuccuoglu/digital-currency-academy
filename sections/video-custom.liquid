@@ -1,0 +1,64 @@
+<div class="container-fluid bg-black" style="background: linear-gradient(180deg, #000 70%, #FFF 30%)">
+  <div class="container relative text-center">
+    <h4 class="color-primary">{{ section.settings.uptitle | escape }}</h4>
+    <h1 class="text-white">{{ section.settings.title | escape }}</h1>
+    <div class="ratio ratio-16x9 text-center mt-4">
+      <iframe class="rounded border border-light" src="https://www.youtube.com/embed/{{ section.settings.video.id }}?rel=0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+<div class="container-fluid text-container pt-5">
+  <div class="container text-center">
+    {{ section.settings.text }}
+		<div class="cta-container mt-2 text-center">
+			<button href="{{ section.settings.button_url }}" class="cta-link btn btn-primary px-5">{{ section.settings.button_text | escape }}</button>
+		</div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Video Custom",
+  "class": "index-section pt-0",
+  "settings": [
+    {
+      "type": "text",
+      "id": "uptitle",
+      "label": "Colored Title"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "video_url",
+      "id": "video",
+      "label": "Video",
+      "accept": ["youtube", "vimeo"]
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text Area",
+      "default": "<p></p>"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Video Section"
+    }
+  ]
+}
+{% endschema %}

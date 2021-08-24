@@ -1,0 +1,86 @@
+<div class="wrapper-hero-2 row py-2 py-lg-5 align-items-center justify-content-center">
+  <div class="col-12 col-lg-6 col-xxl-4 justify-content-around order-2 order-lg-1">
+    <h1 class="text-uppercase text-white text-center mb-0">
+      {{ section.settings.title | escape }}
+    </h1>
+    <p class="text-white text-center">
+      Til naar een hoger niveau met DC Academy
+    </p>
+    <div class="input-group flex-column px-1 px-sm-5">
+      <input type="text" class="border bg-dark border-light rounded text-light" placeholder="E-Mail">
+      <button class="p-3 mt-4 fw-bold rounded border-0 text-uppercase bg-color-primary "><a class="text-white" href="{{shop.url}}/pages/test-q-1">
+        ondtek dc academy
+          trainingen
+      </a></button>
+      <div class="checkbox-group py-4 d-flex flex-row justify-content-center align-content-center gap-3">
+        <input class="my-auto" type="checkbox" name="Terms & Conditions" id="newsletterForm"> <label class="text-white"
+          for="#newsletterForm">Etkinlikler ve güncel haberler hakkında bilgi almak istiyorum</label>
+      </div>
+    </div>
+  </div>
+  {% comment %} <div class="col-12 col-lg-6 d-flex flex-row order-1 order-lg-2 p-0 mb-4 mb-lg-0">
+    <div class="col-6 pe-1"><img src="{{ section.settings.expert_img_1 | img_url: '700x700' }}" class="rounded" alt=""></div>
+    <div class="col-6 ps-1"><img src="{{ section.settings.expert_img_2 | img_url: '700x700' }}" class="rounded" alt=""></div>
+  </div> {% endcomment %}
+  <div class="col-12 col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="{{ section.settings.expert_img_1 | img_url: '700x700' }}" class="rounded" alt=""></div>
+          <div class="swiper-slide"><img src="{{ section.settings.expert_img_2 | img_url: '700x700' }}" class="rounded" alt=""></div>
+          <div class="swiper-slide"><img src="{{ section.settings.expert_img_3 | img_url: '700x700' }}" class="rounded" alt=""></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  slidesPerView: 2,
+  spaceBetween: 10,
+  autoplay: {
+    delay: 2000,
+  },
+  direction: 'horizontal',
+  loop: true,
+  breakpoints: {
+    2200: {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    }
+  }
+});
+</script>
+{% schema %}
+{
+"name": "DC Hero 2",
+"class": "index-section index-section--flush container-fluid bg-black",
+"settings": [
+{
+"type": "text",
+"id": "title",
+"label": "Title"
+},
+{
+  "type": "image_picker",
+  "id": "expert_img_1",
+  "label": "Expert Image 1"
+},
+{
+  "type": "image_picker",
+  "id": "expert_img_2",
+  "label": "Expert Image 2"
+},
+{
+  "type": "image_picker",
+  "id": "expert_img_3",
+  "label": "Expert Image 3"
+}
+],
+"presets": [
+{
+"name": "DC Hero 2"
+}
+]
+}
+{% endschema %}

@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row col-12 text-center text-piece">
+    <h1>{{ section.settings.title | escape }}</h1>
+    <p>{{ section.settings.text }}</p>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Accordion",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Accordion",
+      "category": "Text"
+    }
+  ]
+}
+{% endschema %}

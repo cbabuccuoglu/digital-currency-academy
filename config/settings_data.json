@@ -1,0 +1,1397 @@
+{
+  "current": {
+    "predictive_search_enabled": false,
+    "share_facebook": false,
+    "share_twitter": false,
+    "share_pinterest": false,
+    "favicon": "shopify:\/\/shop_images\/DCLOGO-05.png",
+    "enable_ajax": false,
+    "header_language_switcher_flags": true,
+    "header_language_switcher_label": "language-code",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo_dc.png",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "large",
+    "checkout_accent_color": "#000000",
+    "checkout_button_color": "#ffc16d",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "align_logo": "left",
+          "logo": "shopify:\/\/shop_images\/logo_dc_79bf6b10-237e-43ed-bfa6-255e4eacd037.png",
+          "logo_max_width": 110,
+          "main_linklist": "main-menu",
+          "message": true,
+          "home_page_only": true,
+          "message_text": "<span class=\"color-primary\">niev: <\/span>een-op-een crypto trading training",
+          "message_link": "https:\/\/beta.dcacademy.nl\/pages\/courses-community#crypto",
+          "message_link_text": "BEGIN NU",
+          "color_bg": "#ffffff",
+          "color_text": "#000000"
+        }
+      },
+      "feature-row": {
+        "type": "feature-row",
+        "disabled": true,
+        "settings": {
+          "image": "shopify:\/\/shop_images\/dc_academy_online_crypto.png",
+          "layout": "right",
+          "title": "VIP membership for only 97 Euro per month",
+          "text": "<p>Become a crypto expert? The Digital Currency<br\/>Academy is your place to be<\/p>",
+          "button_label": "Join the Club",
+          "button_link": "shopify:\/\/collections\/all"
+        }
+      },
+      "feature-columns": {
+        "type": "feature-columns",
+        "blocks": {
+          "feature-columns-0": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "feature-columns-1": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          },
+          "feature-columns-2": {
+            "type": "text_block",
+            "settings": {
+              "enable_image": true,
+              "title": "Add a title or tagline",
+              "text": "<p>Share blog posts, products, or promotions with your customers. Use this text to describe products, share details on availability and style, or as a space to display recent reviews or FAQs.<\/p>",
+              "button_label": "",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "feature-columns-0",
+          "feature-columns-1",
+          "feature-columns-2"
+        ],
+        "settings": {
+          "title": "",
+          "align_text": "left"
+        }
+      },
+      "collection": {
+        "type": "collection",
+        "settings": {
+          "title": "Featured collection",
+          "collection": "",
+          "grid": 4,
+          "rows": 2,
+          "show_vendor": false,
+          "show_view_all": false
+        }
+      },
+      "quotes": {
+        "type": "quotes",
+        "blocks": {
+          "quotes-0": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          },
+          "quotes-1": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          },
+          "quotes-2": {
+            "type": "quote",
+            "settings": {
+              "quote": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+              "author": "Author's name"
+            }
+          }
+        },
+        "block_order": [
+          "quotes-0",
+          "quotes-1",
+          "quotes-2"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "image-bar": {
+        "type": "image-bar",
+        "blocks": {
+          "image-bar-0": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "image-bar-1": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          },
+          "image-bar-2": {
+            "type": "image",
+            "settings": {
+              "alignment": "center",
+              "link": "",
+              "cta_label": ""
+            }
+          }
+        },
+        "block_order": [
+          "image-bar-0",
+          "image-bar-1",
+          "image-bar-2"
+        ],
+        "settings": {
+          "section_height": "medium"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "title": "Quick links",
+              "menu": "footer"
+            }
+          },
+          "footer-1": {
+            "type": "newsletter",
+            "settings": {
+              "title": "Newsletter"
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "footer-1"
+        ],
+        "settings": {
+          "show_payment_icons": true,
+          "color_footer_bg": "#202b36",
+          "color_footer_text": "#ffffff",
+          "show_locale_selector": false,
+          "show_currency_selector": false
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "show_quantity_selector": false,
+          "show_vendor": false,
+          "enable_payment_button": true,
+          "show_share_buttons": true,
+          "media_size": "medium",
+          "enable_image_zoom": true,
+          "enable_video_looping": true
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": false,
+          "heading": "You may also like",
+          "show_vendor": false
+        }
+      },
+      "16280597556ea4b7e2": {
+        "type": "custom-content",
+        "disabled": true,
+        "blocks": {
+          "214d48bc-bd4a-4955-b37a-80702af78f68": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"text-container text-center\">\n\t<h4 class=\"emp-color color-primary\">\n\t\tWord nu lid van de DC Community!\n\t<\/h4>\n\t<h1 class=\"pb-4\">Wat staat je te wachten?<\/h1>\n\t<p>\n\t\tOntdek alle ins en outs van crypto trading en ontwikkel de juiste strategie en mindset om jouw geld digitaal te laten rollen!\n\t<\/p>\n\t<p>\n\t\t<strong>Browse individual programs in our store or get access to the entire library for 97 Euro\/month with <a href=\"#\">DC Academy Membership.<\/a><\/strong>\n\t<\/p>\n<\/div>",
+              "width": "100%"
+            }
+          }
+        },
+        "block_order": [
+          "214d48bc-bd4a-4955-b37a-80702af78f68"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_ajax_enable": true,
+          "cart_notes_enable": false
+        }
+      },
+      "1628072251dbb41255": {
+        "type": "feature-row",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/webinar_04fcfef9-d486-4252-8bb8-265ff8095c85.png",
+          "layout": "left",
+          "title": "Webinar",
+          "text": "<p>De afgelopen tijd hebben wij veel interactie gehad met onze leden, en dat zal ook zeker zo blijven! <\/p><p>Met Jia Ruan, Matthias Mende, Shou Xin Wu, Berend Smit & <br\/>Robin Ubaghs hebben we evenementen gehouden over <br\/>zowel crypto als mentaliteit en we zullen doorgaan.<\/p><p>Sluit je nu bij ons aan, zodat we niet meer te laat komen.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "1628072929d53a95b4": {
+        "type": "custom-content",
+        "blocks": {
+          "505df294-483b-4dd4-b926-9724947b0d39": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"text-center\">\n<h1 class=\"fw-bold lh-lg\">Cryptosignalen Ontvangen<\/h1>\n<p>Hoe begin je met traden? Welk exchange platform is het beste? Welke altcoins zijn goed om te hebben?\n<\/p>\n<p>Hoeveel moet je in bitcoin investeren? Alles, maar dan ook echt alles, wordt gedeeld in onze \npraktische en uitgebreide trading en crypto cursus.\n<\/p>\n<p>Now let’s make some cash<\/p>\n<\/div>",
+              "width": "100%"
+            }
+          },
+          "1628072929d53a95b4-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/tv_pc_telefon_tablet_kolaji.png",
+              "width": "100%",
+              "alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "505df294-483b-4dd4-b926-9724947b0d39",
+          "1628072929d53a95b4-1"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "1628072968bf287453": {
+        "type": "custom-content",
+        "blocks": {
+          "9a793d73-ed13-4ff2-bda8-6fe7627fed48": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"text-center\">\n<h4 class=\"color-primary\">\nWord nu lid van de DC Community!<\/h4>\n<h1>Bekijk wat de dc academy-community \nte zeggen heeft en win<\/h1>\n<\/div>",
+              "width": "100%"
+            }
+          }
+        },
+        "block_order": [
+          "9a793d73-ed13-4ff2-bda8-6fe7627fed48"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "162817385513cbd239": {
+        "type": "who-can-join",
+        "blocks": {
+          "c05033e0-5a57-4415-b780-6b9c2cacac58": {
+            "type": "text",
+            "settings": {
+              "box_text": "Ik wil netwerken"
+            }
+          },
+          "bde86d14-7c1a-4a19-87b2-c4b1f20b8177": {
+            "type": "text",
+            "settings": {
+              "box_text": "Ik wil crypto  beveiliging leren"
+            }
+          },
+          "27edee87-6105-4e66-836f-eb91773d2845": {
+            "type": "text",
+            "settings": {
+              "box_text": "ik ben nieuw  in crypto"
+            }
+          },
+          "8d789525-b717-42f2-9c5b-559d14891604": {
+            "type": "text",
+            "settings": {
+              "box_text": "Ik mis onmiddellijke  veranderingen"
+            }
+          }
+        },
+        "block_order": [
+          "c05033e0-5a57-4415-b780-6b9c2cacac58",
+          "bde86d14-7c1a-4a19-87b2-c4b1f20b8177",
+          "27edee87-6105-4e66-836f-eb91773d2845",
+          "8d789525-b717-42f2-9c5b-559d14891604"
+        ],
+        "settings": {
+          "full_width": false,
+          "section_title": "Wie kan lid worden van DC Academy?",
+          "text": "<p>Als ten minste één van de onderstaande opties jou beschrijft, dan ben je bij dc academy aan het juiste adres.<\/p>",
+          "text_size": "large"
+        }
+      },
+      "162820340071f67cda": {
+        "type": "packages-duo",
+        "settings": {
+          "full_width": false,
+          "section_title": "",
+          "text": "",
+          "text_size": "medium"
+        }
+      },
+      "1628257466f3666e35": {
+        "type": "rich-text",
+        "settings": {
+          "full_width": false,
+          "section_title": "",
+          "text": "<p>Volg de beste crypto cursus, sluit je aan bij de DC Community <a href=\"#\" title=\"#\">Click Here<\/a>.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "rich-text": {
+        "type": "rich-text",
+        "settings": {
+          "full_width": false,
+          "section_title": "Free Package Deals",
+          "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis velit non ante euismod tristique. Donec rutrum euismod arcu et ultrices. Phasellus a odio malesuada, vulputate libero non, lacinia tellus. Praesent vulputate ligula at nisi ullamcorper, vitae venenatis nisl dapibus. Donec placerat bibendum nibh, et mattis arcu eleifend vitae. <\/p>",
+          "text_size": "large"
+        }
+      },
+      "custom-content": {
+        "type": "custom-content",
+        "blocks": {
+          "31e98b2d-134b-453f-976f-c5a1e2aa6187": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"text-container text-center\">\n\t<h4 class=\"emp-color color-primary\">\n\t\tDigital Currency Academy\t<\/h4>\n\t<h1 class=\"pb-1\">\nOefen elke dag met de DC Academy \nFree Community<\/h1>\n<\/div>",
+              "width": "100%"
+            }
+          },
+          "509facc9-e759-48bf-bf83-3c4c553cdd55": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/free-hero.jpg",
+              "width": "100%",
+              "alignment": "center"
+            }
+          },
+          "c5499560-b102-43e9-917e-99367af9306a": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "text": "<p>Maak je klaar voor cryptohandel met de gratis dc academy-community waar je lid van kunt worden zonder kennis, kapitaal of ervaring<\/p>",
+              "width": "100%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          },
+          "72860ace-89ac-4deb-8f44-3f5a4ad210fe": {
+            "type": "html",
+            "settings": {
+              "code": "<h3 class=\"pt-4 text-decoration-underline text-center\">Gratis bitcoin- en cryptogemeenschap<\/h3>",
+              "width": "100%"
+            }
+          },
+          "cf1954e8-e0df-472a-aab9-ff0aeaf5610b": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"container\">\n      <div class=\"row list-container p-4 lh-lg border rounded\">\n        <div class=\"col-12 col-lg-6\">\n          <ul>\n            <li>1. Zoek uit wat de grafieken betekenen<\/li>\n            <li>2. Informatie uitwisselen met mensen met \ndezelfde mindset<\/li>\n          <\/ul>\n        <\/div>\n        <div class=\"col-12 col-lg-6\">\n                      <li>3. Verbeter jezelf met 1 crypto workout \nper dag<\/li>\n            <li>4. Doe mee aan gratis mindset-webinars<\/li>\n        <\/div>\n      <\/div>\n    <\/div>",
+              "width": "100%"
+            }
+          },
+          "8acc2590-2f48-432d-9462-174d0d6a4ea3": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"cta-container  text-center py-2\">\n              <button href=\"#\" class=\"cta-link btn btn-primary px-5 py-3 fs-3\">Ik wil hierbij zijn!<\/button>\n            <\/div>",
+              "width": "100%"
+            }
+          },
+          "4fdfa89e-c107-4aa4-bdba-b45b6be832f9": {
+            "type": "html",
+            "settings": {
+              "code": "<h3 class=\"pt-4 text-decoration-underline text-center\">U ontvangt direct een e-mail met een gratis cryptografisch e-book.<\/h3>\n<div class=\"text-center\">\n<p> - Wat betekenen cryptografieken?<\/p>\n<p>- Hoe te handelen met grafieken?\n<\/p>\n<p>- Welke aanwijzingen geven de grafieken?<\/p>\n<\/div>",
+              "width": "100%"
+            }
+          },
+          "630346c8-6019-4115-b1bf-a5c2ee53a12f": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"text-container text-center pt-4\">\n\t\n\t<h1 class=\"lh-lg pb-1\">\nOp zoek naar meer? <br> Bekijk de <span class=\"color-primary\">DC Academy \nVIP Community<\/span>\n<\/h1>\n<\/div>",
+              "width": "100%"
+            }
+          }
+        },
+        "block_order": [
+          "31e98b2d-134b-453f-976f-c5a1e2aa6187",
+          "509facc9-e759-48bf-bf83-3c4c553cdd55",
+          "c5499560-b102-43e9-917e-99367af9306a",
+          "72860ace-89ac-4deb-8f44-3f5a4ad210fe",
+          "cf1954e8-e0df-472a-aab9-ff0aeaf5610b",
+          "8acc2590-2f48-432d-9462-174d0d6a4ea3",
+          "4fdfa89e-c107-4aa4-bdba-b45b6be832f9",
+          "630346c8-6019-4115-b1bf-a5c2ee53a12f"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "join-webinar": {
+        "type": "join-webinar",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/join-webinar.png",
+          "section_title": "VIP lidmaatschap voor maar € 97 \/Maand",
+          "section_text": "Word lid van de DC Academy Community en speel met \nCryptocurrency beginnen met geld verdienen.",
+          "button_text": "Informatie Krijgen",
+          "button_link": ""
+        }
+      },
+      "image-with-text-inner": {
+        "type": "image-with-text-inner",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/webinar-image-1.png",
+          "layout": "right",
+          "title": "The free package is a start.  Explore the VIP Package for  further",
+          "text": "<p>Ontdek alle ins en outs van crypto trading en ontwikkel de juiste strategie en mindset om jouw geld digitaal te laten rollen!<\/p>",
+          "button_label": "Free Package",
+          "button_link": "#"
+        }
+      },
+      "accent-color-bar": {
+        "type": "accent-color-bar",
+        "settings": {
+          "accent_color": "#f4b560"
+        }
+      },
+      "image-with-text-packages": {
+        "type": "image-with-text-packages",
+        "settings": {
+          "expert_image_default": "shopify:\/\/shop_images\/webinar-image-1.png",
+          "section_title": "The free package is a start.  Explore the VIP Package for  further",
+          "section_text": "Ontdek alle ins en outs van crypto trading en ontwikkel de juiste strategie en mindset om jouw geld \ndigitaal te laten rollen!",
+          "button_text": "Join Free",
+          "button_link": "#",
+          "expert_default_name": ""
+        }
+      },
+      "image-section": {
+        "type": "image-section",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/tv_pc_telefon_tablet_kolaji.png"
+        }
+      },
+      "packages-single-table": {
+        "type": "packages-single-table",
+        "settings": {
+          "full_width": false,
+          "section_title": "Talk about your brand",
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "package-box": {
+        "type": "package-box",
+        "settings": {
+          "package_title": "Free",
+          "package_info": "Lorem ipsum dolor sit amet consectetur",
+          "price": "Free",
+          "button_text": "Join Free",
+          "button_url": ""
+        }
+      },
+      "custom-content-vip": {
+        "type": "custom-content-vip",
+        "blocks": {
+          "bdfde254-26d6-456c-9bf9-4c841a3b62bb": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"text-container text-center\">\n\t<h4 class=\"emp-color color-primary\">\n\t\tDigital Currency Academy\n\t<\/h4>\n\t<h1 class=\"pb-1\">Word lid van DC Academy met VIP Package, \nleer de juiste beslissingen te nemen<\/h1>\n\t<p>\n\t\tOntdek alle ins en outs van crypto trading en ontwikkel de juiste strategie \nen mindset om  jouw geld digitaal te laten rollen!\t<\/p>\n\t\n<\/div>",
+              "width": "100%"
+            }
+          },
+          "522a81ad-49b8-43dd-b9c1-3fb9e7c1197e": {
+            "type": "video",
+            "settings": {
+              "video_url": "https:\/\/www.youtube.com\/watch?v=CwJFEWfJ7tQ",
+              "width": "100%",
+              "alignment": "center"
+            }
+          },
+          "ee98a937-fdb9-4055-9846-c0b74feb4bc8": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "text": "<p>DC Academy is opgericht om te leren hoe je geld kunt verdienen met cryptocurrencies. Volgens analisten DC Academy genereert inkomsten met cryptocurrencies; de juiste strategie en mindset baan.<br\/><br\/>Word lid van de dc academy-groep om je eigen strategie en mindset te ontwikkelen.<br\/><br\/><strong>Koop het VIP-pakket om aan de slag te gaan.<\/strong><\/p>",
+              "width": "100%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          }
+        },
+        "block_order": [
+          "bdfde254-26d6-456c-9bf9-4c841a3b62bb",
+          "522a81ad-49b8-43dd-b9c1-3fb9e7c1197e",
+          "ee98a937-fdb9-4055-9846-c0b74feb4bc8"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "image-with-text-packages-vip": {
+        "type": "image-with-text-packages-vip",
+        "settings": {
+          "expert_image_default": "shopify:\/\/shop_images\/webinar-jia.jpg",
+          "section_title": "Wil je zien wat er  gebeurde terwijl je  weg was?",
+          "section_text": "We hebben een aantal video’s voor je gemaakt die je gratis \nkunt bekijken. Je kunt zien wat we doen als we er niet zijn\nen meer te weten komen over de mentaliteit van \nde dc academy.\n\nHonderden van onze leden hebben deelgenomen aan deze \nwebinars. Loop niet achter op onze medeleden terwijl \nje aan je DC Academy-avontuur begint.",
+          "button_text": "BEKIJK VIDEO’S",
+          "button_link": "",
+          "expert_default_name": ""
+        }
+      },
+      "rich-text-vip": {
+        "type": "rich-text-vip",
+        "settings": {
+          "full_width": false,
+          "section_title": "VIP Package Deals",
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "large"
+        }
+      },
+      "image-section-vip": {
+        "type": "image-section-vip",
+        "settings": {}
+      },
+      "packages-single-table-vip": {
+        "type": "packages-single-table-vip",
+        "settings": {
+          "full_width": false,
+          "section_title": "Talk about your brand",
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "package-box-vip": {
+        "type": "package-box-vip",
+        "settings": {
+          "package_title": "VIP",
+          "package_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper libero mi, a volutpat sapien accumsan ac.",
+          "price": "€97 \/ Month",
+          "button_text": "Join",
+          "button_url": ""
+        }
+      },
+      "custom-content-gold": {
+        "type": "custom-content-gold",
+        "blocks": {
+          "59467ce6-92cf-4d85-815e-4ba32ab9d04a": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"text-container text-center\">\n\t<h4 class=\"emp-color color-primary\">\n\t\tWord nu lid van de DC Community!\n\t<\/h4>\n\t<h1 class=\"pb-1\">VIP Gouden Package<\/h1>\n\t<p>\n\t\tOntdek alle ins en outs van crypto trading en ontwikkel de juiste strategie \nen mindset om  jouw geld digitaal te laten rollen!\t<\/p>\n\t\n<\/div>",
+              "width": "100%"
+            }
+          }
+        },
+        "block_order": [
+          "59467ce6-92cf-4d85-815e-4ba32ab9d04a"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "image-with-text-packages-gold": {
+        "type": "image-with-text-packages-gold",
+        "settings": {
+          "expert_image_default": "shopify:\/\/shop_images\/webinar-image-1.png",
+          "section_title": "VIP Gouden Package",
+          "section_text": "Ontdek alle ins en outs van crypto trading en ontwikkel de juiste strategie en mindset om jouw geld digitaal te laten rollen!",
+          "button_text": "Join",
+          "button_link": "",
+          "expert_default_name": ""
+        }
+      },
+      "rich-text-gold": {
+        "type": "rich-text-gold",
+        "settings": {
+          "full_width": false,
+          "section_title": "VIP Gouden Package Deals",
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "large"
+        }
+      },
+      "packages-single-table-gold": {
+        "type": "packages-single-table-gold",
+        "settings": {
+          "full_width": false,
+          "section_title": "Talk about your brand",
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "package-box-gold": {
+        "type": "package-box-gold",
+        "settings": {
+          "package_title": "VIP Gouden Package",
+          "package_info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper libero mi, a volutpat sapien accumsan ac.",
+          "price": "€249 \/ Month",
+          "button_text": "Join",
+          "button_url": ""
+        }
+      },
+      "rich-text-webinar": {
+        "type": "rich-text-webinar",
+        "settings": {
+          "full_width": false,
+          "section_title": "Joint The DC Academy",
+          "text": "<p>Wij helpen jou de markt te begrijpen, hoe te investeren en jouw portefeuille veilig te beheren.Iedereen kan leren traden en groot geld verdienen, jij ook. Jij bent op tijd bij de cryptocurrency revolutie.<\/p><p>Now let’s make some cash!<\/p>",
+          "text_size": "large"
+        }
+      },
+      "custom-content-webinar": {
+        "type": "custom-content-webinar",
+        "blocks": {
+          "483f57bc-9165-43fe-a53d-415bceef823d": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "text": "<p>Lift mee op de kennis en ervaring van professionals<\/p>",
+              "width": "100%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          },
+          "9c3281ed-2d02-4e76-b077-77477cbc974a": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"cta-container mt-0 text-center\">\n\t\t\t\t\t\t<button href=\"#packages\" class=\"cta-link btn btn-primary px-5 py-3 fs-5\">Join the VIP DC ACADEMY<\/button>\n\t\t\t\t\t<\/div>",
+              "width": "100%"
+            }
+          }
+        },
+        "block_order": [
+          "483f57bc-9165-43fe-a53d-415bceef823d",
+          "9c3281ed-2d02-4e76-b077-77477cbc974a"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "feature-row-webinar-1": {
+        "type": "feature-row-webinar-1",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/webinar-image-1.png",
+          "layout": "right",
+          "title": "In de wereld van crypto liggen veel gevaren op de loer, maar waar moet je nou precies op letten?",
+          "text": "<p>In deze webinar zal er precies uitleggen worden hoe je je bitcoin kan beveiligen als een pro. Er zal ook uitgelegd worden waar je juist voor op moet passen en handige tips & tricks.<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "image-text-webinar": {
+        "type": "image-text-webinar",
+        "settings": {
+          "expert_image_default": "shopify:\/\/shop_images\/webinar-image-2.png",
+          "section_title": "Join the Webinar",
+          "section_text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt at la Lorem ipsum dolor sit amet, consectetur adip",
+          "button_text": "Informatie Krijgen",
+          "button_link": "",
+          "expert_default_name": ""
+        }
+      },
+      "feature-row-webinar-2": {
+        "type": "feature-row-webinar-2",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/marco.png",
+          "layout": "left",
+          "title": "\"Marco, het technologische gezicht van Crypto\"",
+          "text": "<p>Met meer dan 3 jaar ervaring en een sterke sterke technische achtergrond, weet Marco waar hij waarde kan vinden. Hij studeert Lucht- en Ruimtevaart Techniek aan de TU Delft, <br\/>maar in plaats van rakketten ziet hij liever Bitcoin <br\/>naar de maan gaan. Marco is van origine een Bitcoin een Ethereum future trader, maar focust zich nu ook op altcoins en DeFi. Naast het traden is hij ook actief in mining. Als je vragen heb over investeren of over de technische aspecten achter crypto, dan is Marco de gene die je  moet spreken.<\/p><p>Marco<\/p>",
+          "button_label": "",
+          "button_link": ""
+        }
+      },
+      "webinar-ad": {
+        "type": "webinar-ad",
+        "settings": {
+          "bg_image": "shopify:\/\/shop_images\/webinar-ad-bg.png",
+          "show_play": false,
+          "title": "Leer uw Bitcoin als een professional te beschermen met DC Academy Webinar",
+          "list": "<ul class=\"text-white webinar-ad-list\">\n  <li>Voorbeelden over hoe het fout kan gaan en waar je op moet letten <\/li>\n  <li>Verschillende hardware wallets met uitleg\n<\/li>\n  <li>Extra beveiliging voor je exchange accounts zoals binance\n <\/li>\n<li>Tips &amp; tricks om “hacker proof” te worden.\n <\/li>\n<li>Ruimte voor vragen <\/li>\n<\/ul>",
+          "button_text": "Informatie Krijgen",
+          "button_link": ""
+        }
+      },
+      "custom-content-expert": {
+        "type": "custom-content-expert",
+        "blocks": {
+          "b2a56093-4b0a-4352-9ed8-0042e9b4a973": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"text-container text-center\">\n\t<h4 class=\"emp-color color-primary\">\n\t\tWord nu lid van de DC Community!\n\t<\/h4>\n\t<h1 class=\"pb-4\">Book DC Expert<\/h1>\n\t<p>\n\t\tOntdek alle ins en outs van crypto trading en ontwikkel de juiste strategie \nen mindset om  jouw geld digitaal te laten rollen!\t<\/p>\n<\/div>",
+              "width": "100%"
+            }
+          },
+          "c1ba0c03-f579-46a7-9332-d687e1b773b4": {
+            "type": "video",
+            "settings": {
+              "video_url": "",
+              "width": "100%",
+              "alignment": "center"
+            }
+          },
+          "afb6304f-77dd-4fce-bb60-fc6a71790fb1": {
+            "type": "html",
+            "settings": {
+              "code": "<div class=\"cta-container mt-2 text-center\">\n\t\t\t\t\t\t<button href=\"#\" class=\"cta-link btn btn-primary px-5 py-3\">Find Your Expert<\/button>\n\t\t\t\t\t<\/div>",
+              "width": "100%"
+            }
+          }
+        },
+        "block_order": [
+          "b2a56093-4b0a-4352-9ed8-0042e9b4a973",
+          "c1ba0c03-f579-46a7-9332-d687e1b773b4",
+          "afb6304f-77dd-4fce-bb60-fc6a71790fb1"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "experts": {
+        "type": "experts",
+        "settings": {
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+        }
+      },
+      "custom-content-events": {
+        "type": "custom-content-events",
+        "blocks": {
+          "022696bd-93d4-4c1c-8385-b522f82799f2": {
+            "type": "text",
+            "settings": {
+              "title": "Coming Soon Event Programme",
+              "text": "<p>Ontdek alle ins en outs van crypto trading en ontwikkel de juiste strategie en mindset om <\/p><p>jouw geld digitaal te laten rollen!<\/p>",
+              "width": "100%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          }
+        },
+        "block_order": [
+          "022696bd-93d4-4c1c-8385-b522f82799f2"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "past-events": {
+        "type": "past-events",
+        "settings": {
+          "heading": "What happened in the past weeks?"
+        }
+      },
+      "16292296293d8ece84": {
+        "type": "dc-hero-2",
+        "settings": {
+          "title": "VANDAAG IS DIE DAG.",
+          "expert_img_1": "shopify:\/\/shop_images\/ferrah_92e5e623-3121-4887-90de-cb842010a9a8.png",
+          "expert_img_2": "shopify:\/\/shop_images\/CRYPTOSDADKL.png",
+          "expert_img_3": "shopify:\/\/shop_images\/faissal_1d072520-31fc-48a2-882e-e1775df2a5e3.png"
+        }
+      },
+      "16292681134fac132f": {
+        "type": "video-custom",
+        "settings": {
+          "uptitle": "Digital Currency Academy",
+          "title": "Leer de juiste beslissingen te nemen voor uw crypto portfolio",
+          "video": "https:\/\/www.youtube.com\/watch?v=CwJFEWfJ7tQ",
+          "text": "<p>DC Academy is opgericht om te leren hoe je geld kunt verdienen met cryptocurrencies. Volgens analisten van <br\/>DC Academy geld verdienen met cryptocurrencies; de juiste strategie en mindset baan.<br\/><br\/>Word lid van de dc academy-groep om je eigen strategie en mindset te ontwikkelen.<br\/><br\/><strong>Vraag je je af hoe je moet beginnen?<br\/><br\/>Word lid van het gratis discord-kanaal via de onderstaande knop.<\/strong><\/p>",
+          "button_text": "Ik wil hierbij zijn!",
+          "button_url": "#"
+        }
+      },
+      "16292692237f9a3cb9": {
+        "type": "rich-text",
+        "settings": {
+          "full_width": true,
+          "section_title": "Hoe leren we strategie en mindset?",
+          "text": "<p>Mentaliteit is visiewerk. Je verbreedt je visie door interactie met mensen die zijn doorgegroeid naar het niveau dat je wilt zijn. dit verandert je mindset en je begint nieuwe kansen en voordelen te krijgen.<\/p>",
+          "text_size": "large"
+        }
+      },
+      "1629290049a3877172": {
+        "type": "image-text-bordered",
+        "settings": {
+          "expert_image_default": "shopify:\/\/shop_images\/webinar-jia.jpg",
+          "section_title": "Wil je zien wat er  gebeurde terwijl je  weg was?",
+          "section_text": "<p>We hebben een aantal video’s voor je gemaakt die je gratis kunt bekijken. Je kunt zien wat we doen als we er niet zijn en meer te weten komen over de mentaliteit van de dc academy.<\/p><p>Honderden van onze leden hebben deelgenomen aan deze webinars. Loop niet achter op onze medeleden terwijl je aan je DC Academy-avontuur begint.<\/p><p><\/p>",
+          "button_text": "BEKIJK VIDEO’S",
+          "button_link": "",
+          "expert_default_name": ""
+        }
+      },
+      "1629290472d8686021": {
+        "type": "rich-text",
+        "settings": {
+          "full_width": false,
+          "section_title": "Wat doen we voor meer?",
+          "text": "<p>DC Academy-analisten zijn hier om iedereen, inclusief u, te leren hoe u geld kunt verdienen met crypto<br\/><br\/><strong>Bekijk wat analisten van DC Academy voor u kunnen doen<\/strong><\/p>",
+          "text_size": "large"
+        }
+      },
+      "1629290522f331143e": {
+        "type": "packages-single-table-vip",
+        "settings": {
+          "full_width": false,
+          "section_title": "Talk about your brand",
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "16292909671578827a": {
+        "type": "image-with-text-link",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/live-chart.png",
+          "layout": "right",
+          "title": "Live Chart",
+          "text": "<p>Leer van de experts hoe zij de charts analyseren en wat de kneepjes van het vak zijn. Stel al je vragen aangaande charts direct aan de experts en krijg feedback op je eigen charts. Elke week worden chart verzoeken behandeld en kan je jouw  meest interessante coin laten analyseren!<\/p>",
+          "button_label": "Klik om eerdere uitzendingen te bekijken",
+          "button_link": "https:\/\/beta.dcacademy.nl\/pages\/event-program"
+        }
+      },
+      "162929111540664725": {
+        "type": "rich-text",
+        "settings": {
+          "full_width": false,
+          "section_title": "Ben je op zoek naar een meer gespecialiseerde opleiding?",
+          "text": "<p><\/p><p>DC Academy is meer dan een gemeenschap.<br\/><br\/>Je kunt een gepersonaliseerd crypto-educatieprogramma maken door een dc academy-expert in te huren, of overal en altijd beginnen met leren met een digitale crypto-cursus.<\/p>",
+          "text_size": "large"
+        }
+      },
+      "16292911207fff0479": {
+        "type": "image-with-text-link",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/booking.png",
+          "layout": "left",
+          "title": "Booking Expert",
+          "text": "<p>Krijg gepersonaliseerd crypto-onderwijs met de dc academy-analist van uw keuze.<br\/><\/p><p>Stel je eigen schema en tijd in.<\/p>",
+          "button_label": "Hoe werkt? klik om erachter te komen",
+          "button_link": "https:\/\/beta.dcacademy.nl\/pages\/courses-community#crypto"
+        }
+      },
+      "162929122902ee1ff6": {
+        "type": "image-with-text-link",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/course_b2b85e81-0345-4c1f-aa27-f30f709246fe.png",
+          "layout": "left",
+          "title": "Course",
+          "text": "<p>De weg naar het worden van een winstgevende trader is een zwaar en een lang proces. Het vinden van de juiste informatie en tips over hoe je moet traden is vaak lastig en tijdrovend. <\/p><p>DC Academy heeft samen met haar ervaren experts een cursus samengesteld die jou een enorme voorsprong zal geven op het trade in de cryptomarkt. <\/p><p>De kennis die onze experts hebben opgedaan hebben over meerdere jaren aan traden, zijn samengevoegd in één cursus. <\/p>",
+          "button_label": "Klik om details te leren",
+          "button_link": "https:\/\/beta.dcacademy.nl\/pages\/courses-community#training"
+        }
+      },
+      "162929123811482f78": {
+        "type": "fullwidth-ad",
+        "settings": {
+          "bg_image": "shopify:\/\/shop_images\/back_6eccfce5-1f2b-42b8-bb55-cd234be5db33.png",
+          "show_play": false,
+          "title": "Crypto Pattern E Book",
+          "list": "<p class=\"text-white\">We hebben een cryptografiek-e-boek geschreven dat u gratis kunt \ndownloaden. Met dit e-book vind je antwoord op de volgende vragen.\n<\/p><ul class=\"text-white fullwidth-ad-list\">\n<li>Wat betekenen cryptografieken? <\/li>\n<li>Hoe te handelen met grafieken?<\/li>\n<li>Welke aanwijzingen geven de grafieken?<\/li>\n<\/ul>\n<br>\n<p class=\"text-white\">Duizenden investeerders hebben ons ebook al gedownload. \nBoordevol praktische tips en ideaal om het verschil te maken \nin je crypto-avontuur!<\/p>",
+          "button_text": "EBOOK DOWNLOADEN",
+          "button_link": ""
+        }
+      },
+      "custom-content-courses-community": {
+        "type": "custom-content-courses-community",
+        "blocks": {
+          "5120ca4c-68e5-4357-a0f6-1fb768ae466d": {
+            "type": "html",
+            "settings": {
+              "code": "<h1 class=\"pt-4 text-center\">Met DC Academy Crypto Training \nleer geld verdienen<\/h1>",
+              "width": "100%"
+            }
+          },
+          "af04c130-bc3b-4c17-9a85-b269611e6188": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "text": "<p>DC Academy-analisten delen hun expertise en ervaring in DC Academy-trainingen.<br\/>ze blijven doorgaan. Dankzij hen kun je beginnen met geld verdienen met bitcoin en andere cryptocurrencies.<\/p><p><a href=\"#\" title=\"#\"><strong>Crypto Training<\/strong><\/a><strong> die je naar een hoger niveau tillen<\/strong><\/p>",
+              "width": "100%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          }
+        },
+        "block_order": [
+          "5120ca4c-68e5-4357-a0f6-1fb768ae466d",
+          "af04c130-bc3b-4c17-9a85-b269611e6188"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "courses-community": {
+        "type": "courses-community",
+        "settings": {
+          "text": ""
+        }
+      },
+      "packages-duo": {
+        "type": "packages-duo",
+        "settings": {
+          "full_width": false,
+          "section_title": "Talk about your brand",
+          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+          "text_size": "medium"
+        }
+      },
+      "image-with-text-link": {
+        "type": "image-with-text-link",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/booking.png",
+          "layout": "left",
+          "title": "Een-op-een Crypto  Training",
+          "text": "<p>DC Academy een-op-een crypto-educatieprogramma geeft je <br\/>toegang tot crypto-expertise. Het  combineert de kracht van <br\/>een-op-een leren en een gepersonaliseerd curriculum om je <br\/>een crypto-expert te maken op een manier die traditioneel <br\/>onderwijs nooit zou kunnen.<\/p>",
+          "button_label": "Hoe werkt? klik om erachter te komen",
+          "button_link": "#"
+        }
+      },
+      "image-with-text-link-copy": {
+        "type": "image-with-text-link-copy",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/course_b2b85e81-0345-4c1f-aa27-f30f709246fe.png",
+          "layout": "left",
+          "title": "Digitale Crypto Training",
+          "text": "<p>De weg naar het worden van een winstgevende trader is een <br\/>zwaar en een lang proces. Het vinden van de juiste informatie <br\/>en tips over hoe je moet traden is vaak lastig en tijdrovend. <br\/><br\/>DC Academy heeft samen met haar ervaren experts een cursus <br\/>samengesteld die jou een enorme voorsprong zal geven op het <br\/>trade in de cryptomarkt. <br\/><br\/>De kennis die onze experts hebben opgedaan hebben over <br\/>meerdere jaren aan traden, zijn samengevoegd in één cursus. <\/p>",
+          "button_label": "Hoe werkt? klik om erachter te komen",
+          "button_link": "#"
+        }
+      },
+      "162949092540303dc1": {
+        "type": "gains-slideshow",
+        "settings": {
+          "slide_1": "shopify:\/\/shop_images\/reviews1.png",
+          "slide_2": "shopify:\/\/shop_images\/reviews2.png",
+          "slide_3": "shopify:\/\/shop_images\/reviews3.png"
+        }
+      },
+      "gains-slideshow": {
+        "type": "gains-slideshow",
+        "settings": {
+          "slide_1": "shopify:\/\/shop_images\/reviews1.png",
+          "slide_2": "shopify:\/\/shop_images\/reviews2.png",
+          "slide_3": "shopify:\/\/shop_images\/reviews3.png"
+        }
+      }
+    },
+    "content_for_index": [
+      "16292296293d8ece84",
+      "16292681134fac132f",
+      "16292692237f9a3cb9",
+      "16280597556ea4b7e2",
+      "1628072251dbb41255",
+      "1629290049a3877172",
+      "1629290472d8686021",
+      "1629290522f331143e",
+      "16292909671578827a",
+      "162929111540664725",
+      "16292911207fff0479",
+      "162929122902ee1ff6",
+      "162929123811482f78",
+      "162817385513cbd239",
+      "1628072929d53a95b4",
+      "162820340071f67cda",
+      "1628072968bf287453",
+      "1628257466f3666e35",
+      "162949092540303dc1"
+    ]
+  },
+  "presets": {
+    "Default": {
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {}
+        },
+        "hero-1": {
+          "type": "hero",
+          "settings": {
+            "hero_size": "large",
+            "text_size": "large"
+          }
+        },
+        "feature-row": {
+          "type": "feature-row",
+          "settings": {}
+        },
+        "feature-columns": {
+          "type": "feature-columns",
+          "blocks": {
+            "feature-columns-0": {
+              "type": "text_block",
+              "settings": {}
+            },
+            "feature-columns-1": {
+              "type": "text_block",
+              "settings": {}
+            },
+            "feature-columns-2": {
+              "type": "text_block",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "feature-columns-0",
+            "feature-columns-1",
+            "feature-columns-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "collection": {
+          "type": "collection",
+          "settings": {
+            "grid": 4
+          }
+        },
+        "hero-2": {
+          "type": "hero",
+          "settings": {
+            "text_size": "large"
+          }
+        },
+        "quotes": {
+          "type": "quotes",
+          "blocks": {
+            "quotes-0": {
+              "type": "quote",
+              "settings": {}
+            },
+            "quotes-1": {
+              "type": "quote",
+              "settings": {}
+            },
+            "quotes-2": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "quotes-0",
+            "quotes-1",
+            "quotes-2"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "image-bar": {
+          "type": "image-bar",
+          "blocks": {
+            "image-bar-0": {
+              "type": "image",
+              "settings": {}
+            },
+            "image-bar-1": {
+              "type": "image",
+              "settings": {}
+            },
+            "image-bar-2": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "image-bar-0",
+            "image-bar-1",
+            "image-bar-2"
+          ],
+          "settings": {}
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "footer-0": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "footer-1": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "footer-0",
+            "footer-1"
+          ],
+          "settings": {
+            "show_payment_icons": true
+          }
+        }
+      },
+      "content_for_index": [
+        "hero-1",
+        "feature-row",
+        "feature-columns",
+        "collection",
+        "hero-2",
+        "quotes",
+        "image-bar"
+      ]
+    },
+    "Light": {
+      "color_text": "#162950",
+      "color_body_text": "#6d6d6d",
+      "color_sale_text": "#DA2F0C",
+      "color_borders": "#e4e4e4",
+      "color_button": "#DA2F0C",
+      "color_button_text": "#ffffff",
+      "color_small_button_text_border": "#162950",
+      "color_text_field": "#ffffff",
+      "color_text_field_text": "#162950",
+      "color_text_field_border": "#909090",
+      "color_image_overlay_text": "#ffffff",
+      "color_image_overlay": "#3d3d3d",
+      "image_overlay_opacity": 40,
+      "color_body_bg": "#f8f8f8",
+      "type_header_font": "muli_n6",
+      "type_header_base_size": 26,
+      "type_base_font": "muli_n4",
+      "type_base_size": 18,
+      "share_facebook": true,
+      "share_twitter": true,
+      "share_pinterest": true,
+      "social_twitter_link": "",
+      "social_facebook_link": "",
+      "social_pinterest_link": "",
+      "social_instagram_link": "",
+      "social_tumblr_link": "",
+      "social_snapchat_link": "",
+      "social_youtube_link": "",
+      "social_vimeo_link": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "small",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#ffffff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#e8f3f6",
+      "checkout_heading_font": "Roboto",
+      "checkout_body_font": "Source Sans Pro",
+      "checkout_accent_color": "#1990c6",
+      "checkout_button_color": "#23314e",
+      "checkout_error_color": "#ff6d6d",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "align_logo": "left",
+            "logo": "",
+            "logo_max_width": 135,
+            "main_linklist": "main-menu",
+            "message": true,
+            "color_bg": "#162950",
+            "color_text": "#ffffff"
+          }
+        },
+        "hero": {
+          "type": "hero",
+          "settings": {
+            "alignment": "center",
+            "hero_size": "x-large",
+            "text_size": "large"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "slideshow-0": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center center"
+              }
+            },
+            "1492095993817": {
+              "type": "image",
+              "settings": {
+                "image": "",
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slideshow-0",
+            "1492095993817"
+          ],
+          "settings": {
+            "slideshow_height": "medium",
+            "text_size": "medium",
+            "autorotate": false,
+            "autorotate_speed": 5
+          }
+        },
+        "featured-collections": {
+          "type": "collection",
+          "settings": {
+            "grid": 3,
+            "rows": 1,
+            "show_vendor": true,
+            "show_view_all": true
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_vendor": false,
+            "show_share_buttons": true,
+            "media_size": "medium",
+            "enable_image_zoom": true,
+            "enable_video_looping": false
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "layout": "grid",
+            "grid": 2,
+            "rows": 2,
+            "show_collection_image": true,
+            "show_vendor": false,
+            "sort_enable": true,
+            "tags_enable": true
+          }
+        },
+        "1492033809691": {
+          "type": "map",
+          "settings": {}
+        },
+        "1492033877875": {
+          "type": "quotes",
+          "blocks": {
+            "1492033877875-0": {
+              "type": "quote",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492033877875-0"
+          ],
+          "settings": {}
+        },
+        "1492033924902": {
+          "type": "custom-content",
+          "blocks": {
+            "1492033924902-0": {
+              "type": "text",
+              "settings": {
+                "width": "100%",
+                "alignment": "center",
+                "align_text": "center"
+              }
+            }
+          },
+          "block_order": [
+            "1492033924902-0"
+          ],
+          "settings": {
+            "title": ""
+          }
+        },
+        "1492096252560": {
+          "type": "collection-list",
+          "blocks": {
+            "1492096252560-0": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-1": {
+              "type": "featured_collection",
+              "settings": {}
+            },
+            "1492096252560-2": {
+              "type": "featured_collection",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "1492096252560-0",
+            "1492096252560-1",
+            "1492096252560-2"
+          ],
+          "settings": {
+            "grid": 3
+          }
+        },
+        "blog-template": {
+          "type": "blog-template",
+          "settings": {
+            "layout": "grid",
+            "blog_show_author": true,
+            "blog_show_date": false
+          }
+        },
+        "article-template": {
+          "type": "article-template",
+          "settings": {
+            "blog_show_author": true,
+            "blog_show_date": true,
+            "show_share_buttons": true
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "cart_notes_enable": false
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "link_list": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "text": {
+              "type": "text",
+              "settings": {}
+            },
+            "newsletter": {
+              "type": "newsletter",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "link_list",
+            "text",
+            "newsletter"
+          ],
+          "settings": {
+            "color_footer_bg": "#f8f8f8",
+            "color_footer_text": "#6d6d6d"
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "featured-collections",
+        "slideshow",
+        "1492033924902",
+        "1492096252560",
+        "1492033877875",
+        "1492033809691"
+      ]
+    }
+  }
+}

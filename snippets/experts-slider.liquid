@@ -1,0 +1,39 @@
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-4 mb-lg-0">
+          <div class="swiper-container-{{ slider_id }} overflow-hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="{{ 'ferrah.png' | asset_img_url: 'master' }}" class="rounded"
+                  alt=""></div>
+              <div class="swiper-slide"><img src="{{ 'faissal.png' | asset_img_url: 'master' }}" class="rounded"
+                  alt=""></div>
+              <div class="swiper-slide"><img src="{{ 'marco.png' | asset_img_url: 'master' }}" class="rounded"
+                  alt=""></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const {{ slider_id }} = new Swiper('.swiper-container-{{ slider_id }}', {
+        // Optional parameters
+        slidesPerView: 3,
+        spaceBetween: 10,
+        autoplay: {
+          delay: 2000,
+        },
+        direction: 'horizontal',
+        loop: true,
+        breakpoints: {
+          320: {
+            slidesPerView: 1
+          },
+          768: {
+            slidesPerView: 2
+          },
+          1024: {
+            slidesPerView: 3
+          }
+        }
+      });
+    </script>

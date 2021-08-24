@@ -1,0 +1,26 @@
+<div class="container-fluid accent-bar mt-0 pt-0">
+</div>
+
+<style>
+  .accent-bar {
+    height: 50px;
+    background-color: {{ section.settings.accent_color }};
+  }
+  .main-content {
+    padding-top: 0 !important;
+  }
+
+</style>
+{% schema %}
+{
+  "name": "Accent Color Bar",
+  "settings": [
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent Color",
+      "default": "#F4B560"
+    }
+  ]
+}
+{% endschema %}

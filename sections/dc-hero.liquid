@@ -1,0 +1,64 @@
+<!-- DC-Hero Section -->
+<style>
+	.dc-hero {
+		background: url({{ section.settings.bg_image | img_url: "master" }}) no-repeat fixed center;
+		background-origin: border-box;
+		background-size: cover;
+	}
+</style>
+		<section class="dc-hero container-fluid">
+			<div class="dc-hero-wrapper container row mx-auto px-0 py-5">
+				<div class="text-col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column justify-content-around pr-4 order-sm-2 order-md-1 pt-sm-4">
+					<h3 class="title-color-main">
+					Digital Currency Academy
+					</h3>
+					<h1 class="hero-text pb-sm-4">
+					Een exclusieve community waar alle ins en outs van de crypto wereld aan bod komen.
+					</h1>
+					<div class="cta-container mt-2">
+						<button href="#packages" class="cta-link btn btn-primary px-5">Join the VIP DC ACADEMY</button>
+					</div>
+				</div>
+				<div class="video-col col-lg-6 col-md-6 col-sm-12 col-xs-12 pl-4 order-sm-1 order-md-2 d-flex align-items-center">
+					<div class="video-container position-relative">
+						<img src="{{ section.settings.video_img | img_url: 'master' }}" class="img-responsive img-rounded">
+            {% if section.settings.show_play %} <img src="{{ 'play_button.png' | asset_img_url: 'master' }}" class="position-absolute" style="left: 0; right: 0; top: 0; bottom: 0; display: block; margin: auto;"> {% endif %}
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End of DC-Hero Section -->
+
+{% schema %}
+{
+  "name": {
+    "en": "DC Hero Section"
+  },
+  "class": "index-section index-section--flush",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
+    },
+		{
+			"type": "image_picker",
+			"id": "video_img",
+			"label": "Video Image"
+		},
+		{
+			"type": "checkbox",
+			"id": "show_play",
+			"label": "Show Play icon",
+			"default": false
+		}
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "DC Hero Section"
+      }
+    }
+  ]
+}
+{% endschema %}

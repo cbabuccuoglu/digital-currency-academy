@@ -1,0 +1,74 @@
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+
+<div id="tab_wrapper" x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'ferrah' }">
+  <div class="container-fluid pt-4 pb-2 border-top border-bottom shadow">
+    <div class="row expert-navbar justify-content-center text-center mx-auto">
+      <div class="col-4"><h3 class="tab-title"><a :class="{ 'active': tab === 'ferrah' }" @click.prevent="tab = 'ferrah'; window.location.hash = 'ferrah'" href="#">Ferrah</a></h3></div>
+      <div class="col-4"><h3 class="tab-title"><a :class="{ 'active': tab === 'faissal' }" @click.prevent="tab = 'faissal'; window.location.hash = 'faissal'" href="#">Faissal</a></h3></div>
+      <div class="col-4"><h3 class="tab-title"><a :class="{ 'active': tab === 'marco' }" @click.prevent="tab = 'marco'; window.location.hash = 'marco'" href="#">Marco</a></h3></div>
+    </div>
+  </div>
+  <div class="container">
+    <div x-show="tab === 'ferrah'" class="expert-page-content">
+      <div class="row">
+        <div class="col-12 pt-5">
+          {{ pages.expert-ferrah.content }}
+          <div class="cta-container mt-4 text-center">
+						<button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/ferrahsimsek'});return false;" class="cta-link btn btn-primary px-5">Book an Appointment</button>
+					</div>
+        </div>
+      </div>
+    </div>
+    <div x-show="tab === 'faissal'" class="expert-page-content">
+      <div class="row">
+        <div class="col-12 pt-5">
+          {{ pages.expert-faissal.content }}
+          <div class="cta-container mt-4 text-center">
+						<button href="#" class="cta-link btn btn-primary px-5">Book an Appointment</button>
+					</div>
+        </div>
+      </div>
+    </div>
+    <div x-show="tab === 'marco'" class="expert-page-content">
+      <div class="row">
+        <div class="col-12 pt-5">
+          {{ pages.expert-marco.content }}
+          <div class="cta-container mt-4 text-center">
+						<button href="#" class="cta-link btn btn-primary px-5">Book an Appointment</button>
+					</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .expert-navbar {
+    max-width: 1640px;
+  }
+  .tab-title a {
+    color: black !important;
+  }
+  .tab-title a:hover {
+    color: #ffc16d !important;
+  }
+  .tab-title a.active {
+    color: #ffc16d !important;
+  }
+</style>
+
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
+{% schema %}
+{
+  "name": "Expert Section",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text Field"
+    }
+  ]
+}
+{% endschema %}

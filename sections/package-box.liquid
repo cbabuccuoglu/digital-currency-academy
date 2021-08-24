@@ -1,0 +1,126 @@
+<section id="packages" class="packages-duo mb-5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="featured-box col-12 px-0">
+        <div class="rounded text-center px-0 my-0 py-0 border"
+          style="border-color: #FBBD69 !important; border-width: 2px !important; border-radius: 10px !important;">
+          <h4 class="fs-3 text-white py-4 px-1" style="background-color: #FBBD69;">{{ section.settings.package_title | escape}}</h4>
+          <p class="font-weight-bold py-3 px-5">{{ section.settings.package_info | escape}}</p>
+          <h1 class="fs-1 pb-3 px-1">{{ section.settings.price | escape}}</h1>
+          <div class="cta-container mt-2 text-center py-4 bg-light"
+            style="border-radius: 0 0 10px 10px; overflow: hidden;">
+            <button href="{{ section.settings.button_url }}" class="cta-link btn btn-primary px-5">{{ section.settings.button_text }}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": {
+    "cs": "Formát RTF",
+    "da": "RTF",
+    "de": "Package Box",
+    "en": "Package Box",
+    "es": "Texto enriquecido",
+    "fi": "Package Box",
+    "fr": "Texte enrichi",
+    "it": "Package Box",
+    "ja": "リッチテキスト",
+    "ko": "Package Box",
+    "nb": "Package Box",
+    "nl": "Tekst met opmaak",
+    "pl": "Tekst sformatowany",
+    "pt-BR": "Package Box",
+    "pt-PT": "Texto formatado",
+    "sv": "Package Box",
+    "th": "Package Box",
+    "tr": "Zengin metin",
+    "vi": "Văn bản đa dạng thức",
+    "zh-CN": "富文本",
+    "zh-TW": "RTF 文字"
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "package_title",
+      "label": "Package Title",
+      "default": "Free"
+    },
+    {
+      "type": "textarea",
+      "id": "package_info",
+      "label": "Package Info"
+    },
+    {
+      "type": "text",
+      "id": "price",
+      "label": "Package Price",
+      "default": "Free"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Join Free"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "cs": "Formát RTF",
+        "da": "RTF",
+        "de": "Package Box",
+        "en": "Package Box",
+        "es": "Texto enriquecido",
+        "fi": "Package Box",
+        "fr": "Texte enrichi",
+        "it": "Package Box",
+        "ja": "リッチテキスト",
+        "ko": "Package Box",
+        "nb": "Package Box",
+        "nl": "Tekst met opmaak",
+        "pl": "Tekst sformatowany",
+        "pt-BR": "Package Box",
+        "pt-PT": "Texto formatado",
+        "sv": "Package Box",
+        "th": "Package Box",
+        "tr": "Zengin metin",
+        "vi": "Văn bản đa dạng thức",
+        "zh-CN": "富文本",
+        "zh-TW": "RTF 文字"
+      },
+      "category": {
+        "cs": "Text",
+        "da": "Tekst",
+        "de": "Text",
+        "en": "Text",
+        "es": "Texto",
+        "fi": "Teksti",
+        "fr": "Texte",
+        "it": "Testo",
+        "ja": "テキスト",
+        "ko": "텍스트",
+        "nb": "Tekst",
+        "nl": "Tekst",
+        "pl": "Tekst",
+        "pt-BR": "Texto",
+        "pt-PT": "Texto",
+        "sv": "Text",
+        "th": "ข้อความ",
+        "tr": "Metin",
+        "vi": "Văn bản",
+        "zh-CN": "文本",
+        "zh-TW": "文字"
+      }
+    }
+  ]
+}
+{% endschema %}

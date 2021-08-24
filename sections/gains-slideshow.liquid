@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-12" style="max-width: 1200px">
+      <div class="swiper-container-gains overflow-hidden">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="{{ section.settings.slide_1 | img_url: 'master' }}" class="img-responsive rounded"
+              alt=""></div>
+          <div class="swiper-slide"><img src="{{ section.settings.slide_2 | img_url: 'master' }}" class="img-responsive rounded"
+              alt=""></div>
+          <div class="swiper-slide"><img src="{{ section.settings.slide_3 | img_url: 'master' }}" class="img-responsive rounded"
+              alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const gains = new Swiper('.swiper-container-gains', {
+    // Optional parameters
+    slidesPerView: 1,
+    spaceBetween: 10,
+    autoplay: {
+      delay: 3000,
+    },
+    direction: 'horizontal',
+    loop: true,
+    centeredSlides: true,
+    }
+  );
+</script>
+
+{% schema %}
+  {
+    "name": "Gains Slider",
+    "class": "index-section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "slide_1",
+        "label": "Slide 1"
+      },
+      {
+        "type": "image_picker",
+        "id": "slide_2",
+        "label": "Slide 2"
+      },
+      {
+        "type": "image_picker",
+        "id": "slide_3",
+        "label": "Slide 3"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Gains Slider"
+      }
+    ]
+  }
+{% endschema %}

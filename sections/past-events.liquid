@@ -1,0 +1,68 @@
+<div class="container">
+  <div class="row gy-4">
+    <div class="events-heading">
+      <h3 class="text-black-50">
+        {{ section.settings.heading | escape }}
+      </h3>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+      <div class="video-thumb-sm position-relative">
+        <img src="{{ 'event-1.png' | asset_img_url: 'master' }}" class="img-responsive">
+        <img src="{{ 'play_button.png' | asset_img_url: 'master' }}" class="position-absolute" style="left: 0; right: 0; top: 0; bottom: 0; display: block; margin: auto;">
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+      <div class="video-thumb-sm position-relative">
+        <img src="{{ 'event-2.png' | asset_img_url: 'master' }}" class="img-responsive">
+        <img src="{{ 'play_button.png' | asset_img_url: 'master' }}" class="position-absolute" style="left: 0; right: 0; top: 0; bottom: 0; display: block; margin: auto;">
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+      <div class="video-thumb-sm position-relative">
+        <img src="{{ 'event-3.png' | asset_img_url: 'master' }}" class="img-responsive">
+        <img src="{{ 'play_button.png' | asset_img_url: 'master' }}" class="position-absolute" style="left: 0; right: 0; top: 0; bottom: 0; display: block; margin: auto;">
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+      <div class="video-thumb-sm position-relative">
+        <img src="{{ 'event-4.png' | asset_img_url: 'master' }}" class="img-responsive">
+        <img src="{{ 'play_button.png' | asset_img_url: 'master' }}" class="position-absolute" style="left: 0; right: 0; top: 0; bottom: 0; display: block; margin: auto;">
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+      <div class="video-thumb-sm position-relative">
+        <img src="{{ 'event-5.png' | asset_img_url: 'master' }}" class="img-responsive">
+        <img src="{{ 'play_button.png' | asset_img_url: 'master' }}" class="position-absolute" style="left: 0; right: 0; top: 0; bottom: 0; display: block; margin: auto;">
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+      <div class="video-thumb-sm position-relative">
+        <img src="{{ 'event-5.png' | asset_img_url: 'master' }}" class="img-responsive">
+        <img src="{{ 'play_button.png' | asset_img_url: 'master' }}" class="position-absolute" style="left: 0; right: 0; top: 0; bottom: 0; display: block; margin: auto;">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <div class="cta-container mt-5 text-center">
+				<button href="#" class="cta-link btn btn-primary px-5">See More</button>
+			</div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+{
+  "name": "Past Events Section",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "What happened in the past weeks?"
+    }
+  ]
+}
+{% endschema %}

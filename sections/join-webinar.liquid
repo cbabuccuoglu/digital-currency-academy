@@ -1,0 +1,141 @@
+<!-- Join Webinar Section -->
+<style>
+  .expert-button {
+    max-width: 400px;
+  }
+  .expert-button a {
+    color: black;
+  }
+  .online-chat-button a {
+    color: white;
+  }
+  .online-chat-button a:hover {
+    color: #F7B862;
+  }
+  .attendees {
+    background-color: #F5F5F5;
+    font-style: italic;
+  }
+  @media screen and (min-width: 768px) {
+    .thumb-container {
+      padding-left: 3rem !important;
+    }
+  }
+
+</style>
+
+<section class="book-expert my-5">
+  <div class="container">
+    <div class="row border rounded">
+      <div class="col-xl-4 col-12 p-0">
+        <img src="{{ section.settings.image | img_url: '700x700' }}" alt="" class="img-responsive w-100">
+      </div>
+      <div class="col-12 col-xl-8 d-flex flex-column justify-content-between px-0 overflow-hidden">
+        <h1 class="section-title pt-5 px-5">{{ section.settings.section_title }}</h1>
+        <p class="section-text fs-3 px-5">
+          {{ section.settings.section_text }}
+        </p>
+        <button class="cta-link btn btn-primary mx-5 mb-3 expert-button"><a href="{{ section.settings.button_link }}">{{ section.settings.button_text }}</a></button>
+        <div class="attendees p-3 row border-top gap-sm-3 gap-md-0">
+                  <div class="w-auto thumb-container">
+                    <span class="thumbnail"><img src="https://via.placeholder.com/50x50" alt="thumb" class="rounded-circle"></span>
+                    <span class="thumbnail"><img src="https://via.placeholder.com/50x50" alt="thumb" class="rounded-circle"></span>
+                    <span class="thumbnail"><img src="https://via.placeholder.com/50x50" alt="thumb" class="rounded-circle"></span>
+                  </div>
+                    <div class="attendees-count-container w-auto my-auto">
+                      45 people are attending this event
+                    </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Join Webinar Section End -->
+
+
+
+{% schema %}
+{
+  "name": "Join Webinar Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Default Expert Image"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "Schrijf ons"
+    },
+    {
+      "type": "textarea",
+      "id": "section_text",
+      "label": "Section Text",
+      "default": "Ontdek alle ins en outs van crypto trading en ontwikkel de juiste strategie en mindset om jouw geld digitaal te laten rollen!"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Look Other Experts"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "cs": "Formát RTF",
+        "da": "RTF",
+        "de": "Join Webinar Section",
+        "en": "Join Webinar Section",
+        "es": "Texto enriquecido",
+        "fi": "Join Webinar Section",
+        "fr": "Texte enrichi",
+        "it": "Join Webinar Section",
+        "ja": "リッチテキスト",
+        "ko": "Join Webinar Section",
+        "nb": "Join Webinar Section",
+        "nl": "Tekst met opmaak",
+        "pl": "Tekst sformatowany",
+        "pt-BR": "Join Webinar Section",
+        "pt-PT": "Texto formatado",
+        "sv": "Join Webinar Section",
+        "th": "Join Webinar Section",
+        "tr": "Zengin metin",
+        "vi": "Văn bản đa dạng thức",
+        "zh-CN": "富文本",
+        "zh-TW": "RTF 文字"
+      },
+      "category": {
+        "cs": "Text",
+        "da": "Tekst",
+        "de": "Text",
+        "en": "Text",
+        "es": "Texto",
+        "fi": "Teksti",
+        "fr": "Texte",
+        "it": "Testo",
+        "ja": "テキスト",
+        "ko": "텍스트",
+        "nb": "Tekst",
+        "nl": "Tekst",
+        "pl": "Tekst",
+        "pt-BR": "Texto",
+        "pt-PT": "Texto",
+        "sv": "Text",
+        "th": "ข้อความ",
+        "tr": "Metin",
+        "vi": "Văn bản",
+        "zh-CN": "文本",
+        "zh-TW": "文字"
+      }
+    }
+  ]
+}
+{% endschema %}

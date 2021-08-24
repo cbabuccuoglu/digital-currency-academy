@@ -1,0 +1,93 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 d-flex">
+      <img src="{{ section.settings.image | img_url: 'master' }}" class="img-fluid mx-auto">
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": {
+    "cs": "Formát RTF",
+    "da": "RTF",
+    "de": "Image Section",
+    "en": "Image Section",
+    "es": "Texto enriquecido",
+    "fi": "Image Section",
+    "fr": "Texte enrichi",
+    "it": "Image Section",
+    "ja": "リッチテキスト",
+    "ko": "Image Section",
+    "nb": "Image Section",
+    "nl": "Tekst met opmaak",
+    "pl": "Tekst sformatowany",
+    "pt-BR": "Image Section",
+    "pt-PT": "Texto formatado",
+    "sv": "Image Section",
+    "th": "Image Section",
+    "tr": "Zengin metin",
+    "vi": "Văn bản đa dạng thức",
+    "zh-CN": "富文本",
+    "zh-TW": "RTF 文字"
+  },
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "cs": "Formát RTF",
+        "da": "RTF",
+        "de": "Image Section",
+        "en": "Image Section",
+        "es": "Texto enriquecido",
+        "fi": "Image Section",
+        "fr": "Texte enrichi",
+        "it": "Image Section",
+        "ja": "リッチテキスト",
+        "ko": "Image Section",
+        "nb": "Image Section",
+        "nl": "Tekst met opmaak",
+        "pl": "Tekst sformatowany",
+        "pt-BR": "Image Section",
+        "pt-PT": "Texto formatado",
+        "sv": "Image Section",
+        "th": "Image Section",
+        "tr": "Zengin metin",
+        "vi": "Văn bản đa dạng thức",
+        "zh-CN": "富文本",
+        "zh-TW": "RTF 文字"
+      },
+      "category": {
+        "cs": "Text",
+        "da": "Tekst",
+        "de": "Text",
+        "en": "Text",
+        "es": "Texto",
+        "fi": "Teksti",
+        "fr": "Texte",
+        "it": "Testo",
+        "ja": "テキスト",
+        "ko": "텍스트",
+        "nb": "Tekst",
+        "nl": "Tekst",
+        "pl": "Tekst",
+        "pt-BR": "Texto",
+        "pt-PT": "Texto",
+        "sv": "Text",
+        "th": "ข้อความ",
+        "tr": "Metin",
+        "vi": "Văn bản",
+        "zh-CN": "文本",
+        "zh-TW": "文字"
+      }
+    }
+  ]
+}
+{% endschema %}

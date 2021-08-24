@@ -1,0 +1,146 @@
+<!-- Image w Text Gold -->
+<style>
+  .expert-button {
+    max-width: 400px;
+  }
+  .expert-button a {
+    color: black;
+  }
+  .status-indicator {
+    background-color: black;
+    color: white;
+    border-color: black;
+  }
+  .bubble {
+  height: 15px;
+  width: 15px;
+  margin-bottom: -0.15rem;
+  margin-right: 1rem;
+  background-color: #8EFF6C;
+  border-radius: 50%;
+  display: inline-block;
+  }
+  .online-chat-button a {
+    color: white;
+  }
+  .online-chat-button a:hover {
+    color: #F7B862;
+  }
+
+</style>
+
+<section class="book-expert container py-5">
+  <div class="row border rounded position-relative">
+    <div class="col-xl-4 col-12 p-0">
+      <img src="{{ section.settings.expert_image_default | img_url: '700x700' }}" alt="" style="object-fit: cover" class="w-100 h-100">
+    </div>
+    <div class="col-12 col-xl-8 d-flex flex-column justify-content-around p-5">
+      <h1 class="section-title">{{ section.settings.section_title | escape }}</h2>
+      <p class="section-text fs-4">
+        {{ section.settings.section_text | escape}}
+      </p>
+      <button class="cta-link btn btn-primary px-5 expert-button mx-auto ms-xl-0 fs-4 mt-lg-3 mt-xl-0"><a href="{{ section.settings.button_link }}">{{ section.settings.button_text | escape}}</a></button>
+      {% unless section.settings.expert_default_name == blank %}
+      <div
+        class="status-indicator position-absolute top-0 end-0 fw-bold h-auto py-3 px-5 border rounded m-4">
+        <span class="bubble"></span><span class="text-center align-content-center justify-content-center online-chat-button"><a href="#">{{ section.settings.expert_default_name }} is Online. Write
+          now!</a></span>
+      </div>
+      {% endunless %}
+    </div>
+  </div>
+</section>
+<!-- Image w Text Gold End -->
+
+
+
+{% schema %}
+{
+  "name": "Image w Text Gold",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "expert_image_default",
+      "label": "Default Expert Image"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "Schrijf ons"
+    },
+    {
+      "type": "textarea",
+      "id": "section_text",
+      "label": "Section Text",
+      "default": "Ontdek alle ins en outs van crypto trading en ontwikkel de juiste strategie en mindset om jouw geld digitaal te laten rollen!"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Look Other Experts"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "text",
+      "id": "expert_default_name",
+      "label": "Default Expert Name"
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "cs": "Formát RTF",
+        "da": "RTF",
+        "de": "Image w Text Gold",
+        "en": "Image w Text Gold",
+        "es": "Texto enriquecido",
+        "fi": "Image w Text Gold",
+        "fr": "Texte enrichi",
+        "it": "Image w Text Gold",
+        "ja": "リッチテキスト",
+        "ko": "Image w Text Gold",
+        "nb": "Image w Text Gold",
+        "nl": "Tekst met opmaak",
+        "pl": "Tekst sformatowany",
+        "pt-BR": "Image w Text Gold",
+        "pt-PT": "Texto formatado",
+        "sv": "Image w Text Gold",
+        "th": "Image w Text Gold",
+        "tr": "Zengin metin",
+        "vi": "Văn bản đa dạng thức",
+        "zh-CN": "富文本",
+        "zh-TW": "RTF 文字"
+      },
+      "category": {
+        "cs": "Text",
+        "da": "Tekst",
+        "de": "Text",
+        "en": "Text",
+        "es": "Texto",
+        "fi": "Teksti",
+        "fr": "Texte",
+        "it": "Testo",
+        "ja": "テキスト",
+        "ko": "텍스트",
+        "nb": "Tekst",
+        "nl": "Tekst",
+        "pl": "Tekst",
+        "pt-BR": "Texto",
+        "pt-PT": "Texto",
+        "sv": "Text",
+        "th": "ข้อความ",
+        "tr": "Metin",
+        "vi": "Văn bản",
+        "zh-CN": "文本",
+        "zh-TW": "文字"
+      }
+    }
+  ]
+}
+{% endschema %}

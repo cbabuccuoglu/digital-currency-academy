@@ -1,0 +1,464 @@
+<div id="tab_wrapper" x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'community' }">
+  <div class="container-fluid secondary-header pt-4 pb-2 border-top border-bottom shadow" id="fixedOnScroll">
+    <div class="row expert-navbar justify-content-center text-center mx-auto">
+      <div class="col-12 col-lg-4 py-3 text-nowrap">
+        <h3 class="tab-title"><a :class="{ 'active': tab === 'community' }"
+            @click.prevent="tab = 'community'; window.location.hash = 'community'" href="#">DC Academy Community</a>
+        </h3>
+      </div>
+      <div class="col-12 col-lg-4 py-3 text-nowrap">
+        <h3 class="tab-title"><a :class="{ 'active': tab === 'crypto' }"
+            @click.prevent="tab = 'crypto'; window.location.hash = 'crypto'" href="#">Een-op-een Crypto Training</a>
+        </h3>
+      </div>
+      <div class="col-12 col-lg-4 py-3 text-nowrap">
+        <h3 class="tab-title"><a :class="{ 'active': tab === 'training' }"
+            @click.prevent="tab = 'training'; window.location.hash = 'training'" href="#">Digitale Crypto Training</a>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <!-- Tab 1 -->
+  <div x-show="tab === 'community'" class="expert-page-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 pt-5">
+          {{ pages.dc-academy-community.content }}
+          <div class="cta-container mt-4 text-center">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row list-container p-4 lh-lg border rounded">
+        <div class="col-12 col-lg-6">
+          <ul>
+            <li>1. Dagelijkse updates van de markt </li>
+            <li>2. Gedetailleerde uitleg over alle fijne kneepjes van het vak</li>
+            <li>3. 24/7 support van het team</li>
+            <li>4. Directe beantwoording van vraagtekens</li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-6">
+          <li>5. Informatie over waarom, wanneer en wat te investeren in cryptovaluta.</li>
+          <li>6. Support voor beginner en gevorderde, jong en oud.</li>
+          <li>7. Network</li>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-12 text-center">
+          <h1>Wie kan lid worden van de <span class="color-primary">DC Academy-community?</span></h1>
+          <p>Als ten minste één van de onderstaande opties jou beschrijft, dan ben je bij de <a href="">DC Academy
+              Community aan het juiste adres.</a></p>
+        </div>
+      </div>
+    </div>
+
+    {% render 'boxes-courses-community' %}
+
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-12 d-flex">
+          <img src="{{ 'dcacademy-all-screens.jpg' | asset_img_url: 'master' }}" alt="DC Academy on all screens"
+            class="img-responsive mx-auto">
+        </div>
+        <div class="col-12">
+          <p class="text-center"><span class="color-primary text-decoration-underline">Word lid van de DC Academy
+              Community</span> waar je alles leert over beleggen, bitcoin, aandelen en handelen.</p>
+        </div>
+      </div>
+    </div>
+
+  <div class="container">
+    <div class="row px-5 justify-content-center ">
+      <div class="bg-box col-lg-6 col-md-6 col-sm-12 col-xs-12 px-0 my-auto">
+        <div class="bg-box-child rounded text-center px-0 float-right border">
+          <div class="px-1 px-md-5 bg-box-padding">
+            <h4 class="fs-3 border-bottom border-dark text-secondary py-3 px-4 text-nowrap">VIP Packages</h4>
+            <p class="font-weight-bold py-3 px-4">Word lid van de DC Community en leer alle geheimen van crypto traden
+            </p>
+            <h1 class="fs-1 pb-3 px-4 text-nowrap">€ 97/Month</h1>
+          </div>
+          <div class="cta-container mt-2 text-center py-4 bg-light">
+            <button href="#" class="cta-link btn btn-primary px-5">Koop Mu</button>
+          </div>
+        </div>
+      </div>
+      <div class="featured-box col-lg-6 col-md-6 col-sm-12 col-xs-12 px-0">
+        <div class="rounded text-center px-0 my-0 py-0 border"
+          style="border-color: #FBBD69 !important; border-width: 2px !important; border-radius: 10px !important;">
+          <h4 class="fs-3 text-white py-5 px-1" style="background-color: #FBBD69;">VIP Gouden Packages</h4>
+          <p class="font-weight-bold py-3 px-1 px-md-5">Word lid van de DC Community en leer alle geheimen van crypto traden</p>
+          <h1 class="fs-1 pb-3 px-1">€ 249/Month</h1>
+          <div class="cta-container mt-2 text-center py-4 bg-light"
+            style="border-radius: 0 0 10px 10px; overflow: hidden;">
+            <button href="#" class="cta-link btn btn-primary px-5">Koop Mu</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row px-5 justify-content-center mt-4">
+      <div class="col-lg-6 col-md-6 col-12 col-sm-12 col-xs-12 payment-icons-custom my-4 border-end border-dark">
+        <img src="{{ 'payment-icons.png' | asset_img_url:'master' }}" class="img-responsive">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 payment-security-custom my-4">
+        <img src="{{ 'payment-security.png' | asset_img_url:'master' }}" class="img-responsive">
+      </div>
+    </div>
+  </div>
+    <!--  -->
+
+    {% render 'accordion-courses-community' %}
+
+    <!-- fullwidth-ad Section -->
+    {% render 'ebook-ad' %}
+    <!-- End of fullwidth-ad Section -->
+    <div class="container">
+      <div class="text-center">
+        <h4 class="color-primary">
+          Word nu lid van de DC Community!
+        </h4>
+        <h1>
+          Wat gebeurt er in de DC Academy-community? bekijk beschrijvingen en prestaties
+        </h1>
+      </div>
+      <div class="col-12 d-flex justify-content-center">
+        <img src="{{ 'gains.jpg' | asset_img_url: 'master' }}" class="img-responsive rounded">
+      </div>
+    </div>
+
+    <div class="row pt-4">
+      <div class="col-12 text-center">
+        <p><span class="color-primary">Word lid van de DC Academy Community</span> waar je cryptosignalen ontvangt</p>
+      </div>
+    </div>
+  </div>
+  <!-- End of Tab 1 -->
+
+  <!-- Tab 2 -->
+  <div x-show="tab === 'crypto'" class="expert-page-content">
+    {% comment %} <div class="container">
+      <div class="row">
+        <div class="col-12 pt-5">
+          {{ pages.one-to-one-crypto-education.content }}
+          <div class="cta-container mt-4 text-center"></div>
+        </div>
+      </div>
+    </div> {% endcomment %}
+    <!--  -->
+    <div class="container pt-2 pt-lg-5">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="fs-1">Wat kan ik leren?</h1>
+          <p>
+            In de DC Academy-community waar je al je vragen kunt stellen, informatie kunt delen en inspiratie kunt
+            opdoen,
+            <br><span class="text-decoration-underline color-primary">Ontdek wat u kunt leren van onze analisten.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h3>Leer je crypto vrij</h3>
+          <p>
+            DC Academy een-op-een crypto-educatieprogramma geeft je toegang tot crypto-expertise. Het
+            combineert de kracht van een-op-een leren en een gepersonaliseerd curriculum om je een crypto-expert te
+            maken op een manier die traditioneel onderwijs nooit zou kunnen.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+
+    <style>
+      .expert-button {
+        max-width: 400px;
+      }
+
+      .expert-button a {
+        color: black;
+      }
+
+      .status-indicator {
+        background-color: black;
+        color: white;
+        border-color: black;
+      }
+
+      .bubble {
+        height: 15px;
+        width: 15px;
+        margin-bottom: -0.15rem;
+        margin-right: 1rem;
+        background-color: #8EFF6C;
+        border-radius: 50%;
+        display: inline-block;
+      }
+
+      .online-chat-button a {
+        color: white;
+      }
+
+      .online-chat-button a:hover {
+        color: #F7B862;
+      }
+
+    </style>
+
+    <div class="book-expert container">
+      <div class="row border rounded ">
+        <div class="col-xl-4 col-12 p-0">
+          <img src="{{ 'one-to-one.jpg' | asset_img_url: '700x700' }}" alt="" style="object-fit: cover" class="w-100">
+        </div>
+        <div class="col-12 col-xl-8 d-flex flex-column justify-content-around p-5">
+          <h1 class="section-title">Waar te beginnen niet
+            zeker over ben jij?</h2>
+          <div class="section-text">
+            <p>Een zeer nauwkeurige quiz met 10 vragen die
+              onthult welke onderwerpen u dringend moet
+              leren om geld te verdienen met cryptohandel.
+
+              <br>U kunt uw beoordelingsresultaten vervolgens
+              gebruiken om de juiste taken voor uw
+              persoonlijke behoeften en doelen te kiezen en
+              uw eigen leercurriculum op maat te ontwerpen.
+            </p>
+          </div>
+          <button class="cta-link btn btn-primary px-5 expert-button mx-auto ms-xl-0 fs-4 mt-lg-3 mt-xl-0"><a
+              href="https://beta.dcacademy.nl/pages/test-end-2">
+              START DE TEST</a></button>
+          {% unless section.settings.expert_default_name == blank %}
+          <div class="status-indicator position-absolute top-0 end-0 fw-bold h-auto py-3 px-5 border rounded m-4">
+            <span class="bubble"></span><span
+              class="text-center align-content-center justify-content-center online-chat-button"><a href="#">{{
+                section.settings.expert_default_name }} is Online. Write
+                now!</a></span>
+          </div>
+          {% endunless %}
+        </div>
+      </div>
+    </div>
+    <!-- Image w Text Bordered End -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="fs-1">
+            Wie kan lid worden van de
+            <br><span class="color-primary">DC Academy
+              Een-Op-Programma?</span>
+          </h1>
+          <p>Als ten minste één van de onderstaande opties jou beschrijft, dan ben je bij de <span
+              class="color-primary text-decoration-underline">DC Academy Community aan het juiste adres.</span></p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    {% render 'boxes-courses-community' %}
+    <!--  -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="fs-1">
+            Je leert wat het is om te winnen met zulke trainers
+          </h1>
+          <p>DC Academy uzmanları ile öğrenecek çok şey var.</p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    {% render 'experts-slider', slider_id: 'tab_2' %}
+    <!--  -->
+    {% render 'accordion-courses-community' %}
+
+  </div>
+  <!-- End of Tab 2 -->
+
+  <!-- Tab 3 -->
+  <div x-show="tab === 'training'" class="expert-page-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 pt-5">
+          {{ pages.digital-currency-education.content }}
+          <div class="cta-container mt-4 text-center"></div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <style>
+      .course-form {
+        background-color: #151A26;
+      }
+
+      .custom-html-container ul {
+        list-style-type: none;
+      }
+
+      .course-form-list li:before {
+        content: '\2713';
+        margin-right: 10px;
+      }
+
+    </style>
+
+    <!-- form section -->
+    <div class="container-fluid course-form">
+      <div class="course-form-wrapper container mx-auto px-3 px-md-0 py-5 mb-0">
+        <div class="row">
+          <div class="text-col col-md-6 col-12 d-flex flex-column justify-content-around pt-sm-4 order-1">
+            <h1 class="hero-text pb-sm-4 pb-md-0">
+              Doe mee aan de loting voor
+              100% Scholarship
+            </h1>
+            <p class="text-white">
+              Formu doldur ve Dijital Kripto kursuna ücretsiz katılma şansı yakala.
+              30 Eylül 2021 tarihinde DC Akademi Instagram hesabında canlı olarak
+              Yapılacak çekilişe katılma koşulları:
+            </p>
+            <div class="custom-html-container pb-4 text-white">
+              <ul class="course-form-list">
+                <li> Vul het formulier in en verzend het.</li>
+                <li><a href="">Volg de DC Academy Instagram-pagina.</a></li>
+              </ul>
+            </div>
+            <p class="fs-6 text-white">* 3 gelukkige mensen onder onze deelnemers om de digitale cryptocursus
+              gratis te
+              ontvangen
+              krijgt gelijk. De loting wordt op 30 september 2021 gepubliceerd op de DC Academy Instagram-pagina</p>
+            <div class="cta-container mt-2 mb-4">
+              <button href="#" class="cta-link btn btn-primary px-5">E-boek downloaden</button>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center order-2">
+            <input type="text" class="mb-3 border bg-dark border-light rounded text-light" placeholder="Name">
+            <input type="phone" class="mb-3 border bg-dark border-light rounded text-light" placeholder="Phone">
+            <input type="email" class="mb-3 border bg-dark border-light rounded text-light" placeholder="Email">
+            <button class="p-3 mt-md-4 fw-bold rounded border-0 text-uppercase bg-color-primary text-white">Ik wil de
+              expert ontmoeten</button>
+            <div class="checkbox-group py-4 d-flex flex-row justify-content-center align-content-center gap-3">
+              <input class="my-auto" type="checkbox" name="Terms & Conditions" id="newsletterForm"> <label
+                class="text-white" for="#newsletterForm">Ik ontvang graag informatie over evenementen en actueel
+                nieuws.</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End of form Section -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="fs-1">Wie kan de <span class="color-primary">DC Academy Digitale Crypto Training</span> volgen?
+          </h1>
+          <p class="text-center">Als ten minste een van de onderstaande opties u beschrijft, is digitale crypto training
+            de juiste plek voor
+            u.</p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    {% render 'boxes-courses-community' %}
+    <!--  -->
+    {% render 'cta-button' %}
+    <!--  -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="fs-6">* Pre-registreer en wij bellen u om u te informeren over de details van de cursus.</p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    {% render 'ebook-ad' %}
+    <!--  -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 class="fs-1">DC Academy Experts</h1>
+          <p>DC Academy-experts leren iedereen, ook jij, hoe je geld kunt verdienen met crypto.</p>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    {% render 'experts-slider', slider_id: 'tab_3' %}
+  </div>
+  <!-- End of Tab 3 -->
+
+</div>
+
+<style>
+  .arrow-up {
+    display: block;
+    content: ' ';
+    background: url({{ 'arrow-up.svg' | asset_url }}) no-repeat center;
+    background-size: contain;
+    width: 30px;
+    height: 40px;
+    transition: all 0.5s;
+  }
+
+  .arrow-down {
+    display: block;
+    content: ' ';
+    background: url({{ 'arrow-down.svg' | asset_url }}) no-repeat center;
+    background-size: contain;
+    width: 30px;
+    height: 40px;
+    transition: all 0.5s;
+  }
+
+  .expert-navbar {
+    max-width: 1640px;
+  }
+
+  .tab-title a {
+    color: black !important;
+  }
+
+  .tab-title a:hover {
+    color: #ffc16d !important;
+    padding-bottom: 1rem;
+    border-bottom: 7px solid #ffc16d;
+  }
+
+  .tab-title a.active {
+    color: #ffc16d !important;
+    padding-bottom: 1rem;
+    border-bottom: 7px solid #ffc16d;
+  }
+
+</style>
+
+{% comment %}
+<script>
+  window.onscroll = function () { fixedOnScroll() };
+
+  var header = document.getElementById("fixedOnScroll");
+  var sticky = header.offsetTop;
+
+  function fixedOnScroll() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+</script> {% endcomment %}
+{% schema %}
+{
+"name": "Courses & Community",
+"class": "index-section",
+"settings": [
+{
+"type": "text",
+"id": "text",
+"label": "Text Field"
+}
+]
+}
+{% endschema %}

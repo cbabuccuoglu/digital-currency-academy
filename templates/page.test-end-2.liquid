@@ -1,0 +1,51 @@
+<style>
+  nav {
+    visibility: hidden;
+  }
+
+  footer {
+    display: none;
+  }
+
+  body {
+    background-color: black;
+    min-height: 100vh;
+
+  }
+
+  .js-mobile-nav-toggle {
+    display: none;
+  }
+
+  .fullwidth-ad-list li:before {
+    color: #fcbc69;
+    content: '\2713';
+    margin-right: 10px;
+  }
+
+</style>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-8 text-white d-flex flex-column justify-content-between pb-4">
+      <h2 class="color-primary">
+        DC Academy Analist Advies</h2>
+      <h1 class="fs-1">Onderwerpen waaraan u moet
+        werken om geld te verdienen
+        met cryptocurrencies:</h1>
+      <ul class="fullwidth-ad-list fs-4">
+        <li>Günlük Piyasa Güncellemeleri </li>
+        <li>Ticaretin tüm püf noktalarının ayrıntılı açıklaması</li>
+        <li>7/24 destek</li>
+      </ul>
+      <div class="cta-container mt-4">
+        <a href="{{shop.url}}/pages/vip-package">
+          <button class="cta-link btn btn-primary rounded fs-5 text-uppercase">gratis consult met expert</button>
+        </a>
+      </div>
+    </div>
+    <div class="col-12 col-md-6 col-lg-4">
+      <img src="{{ 'faissal-expert.jpg' | asset_img_url: 'master' }}" class="img-responsive rounded">
+    </div>
+  </div>
+</div>

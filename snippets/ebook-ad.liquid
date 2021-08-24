@@ -1,0 +1,48 @@
+<style>
+  .fullwidth-ad {
+    background: url({{ 'fw-ad-bg.jpg' | asset_img_url: 'master' }}) no-repeat fixed center;
+    background-origin: border-box;
+    background-size: cover;
+  }
+
+  .custom-html-container ul {
+    list-style-type: none;
+  }
+
+  .fullwidth-ad-list li:before {
+    content: '\2713';
+    margin-right: 10px;
+  }
+
+</style>
+
+<div class="fullwidth-ad container-fluid py-5">
+  <div class="fullwidth-ad-wrapper container row mx-auto px-0 py-5">
+    <div
+      class="text-col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column justify-content-around pr-4 order-sm-2 order-md-1 pt-sm-4">
+      <h1 class="hero-text pb-sm-4 pb-md-0">
+        Oefen met Crypto E-Book
+      </h1>
+      <p class="text-white">
+        We hebben een cryptografiek E-Book geschreven dat u gratis kunt
+        downloaden. Met dit e-book vindt u de antwoorden op de
+        volgende vragen.
+      </p>
+      <div class="custom-html-container pb-4 text-white">
+        <ul class="fullwidth-ad-list">
+          <li>Wat betekenen cryptografieken?</li>
+          <li>Hoe te handelen met grafieken?</li>
+          <li>Welke aanwijzingen geven de grafieken?</li>
+        </ul>
+        <p class="text-white">
+          Duizenden van onze bezoekers hebben ons eBook al gedownload.
+          Boordevol praktische tips en maak het verschil in je
+          crypto-avontuur!
+        </p>
+      </div>
+      <div class="cta-container mt-2">
+        <button href="#" class="cta-link btn btn-primary px-5">E-boek downloaden</button>
+      </div>
+    </div>
+  </div>
+</div>

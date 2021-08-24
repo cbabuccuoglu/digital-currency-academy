@@ -1,0 +1,96 @@
+<!-- fullwidth-ad Section -->
+<style>
+	.fullwidth-ad {
+		/* background: url({{ 'ad-bg.png' | asset_img_url: "master" }}) no-repeat fixed center; */
+    background-color: #202B36;
+		background-origin: border-box;
+		background-size: cover;
+	}
+  .custom-html-container ul {
+    list-style-type: none;
+  }
+  .fullwidth-ad-list li:before {
+    content: '\2713'; margin-right: 10px;
+  }
+</style>
+
+<section class="fullwidth-ad container-fluid">
+	<div class="fullwidth-ad-wrapper container row mx-auto px-0 py-5">
+		<div class="text-col col-lg-6 col-md-6 col-sm-12 col-xs-12 d-flex flex-column justify-content-around pr-4 order-sm-2 order-md-1 pt-sm-4">
+			<h1 class="hero-text pb-sm-4 pb-md-0">
+			{{ section.settings.title | escape }}
+			</h1>
+      <div class="custom-html-container pb-4">
+        {{ section.settings.list }}
+      </div>
+			<div class="cta-container mt-2">
+				<button href="{{ section.settings.button_link }}" class="cta-link btn btn-primary px-5">{{ section.settings.button_text | escape }}</button>
+			</div>
+		</div>
+    {% unless section.settings.video_img == blank %}
+      <div class="video-col col-lg-6 col-md-6 col-sm-12 col-xs-12 pl-4 order-sm-1 order-md-2 d-flex align-items-center">
+        <div class="video-container position-relative">
+          <img src="{{ section.settings.video_img | img_url: 'master' }}" class="img-responsive img-rounded">
+          {% if section.settings.show_play %} 
+            <img src="{{ 'play_button.png' | asset_img_url: 'master' }}" class="position-absolute" style="left: 0; right: 0; top: 0; bottom: 0; display: block; margin: auto;"> 
+          {% endif %}
+        </div>
+      </div>
+    {% endunless %}
+	</div>
+</section>
+		<!-- End of fullwidth-ad Section -->
+
+{% schema %}
+{
+  "name": "Fullwidth Ad Section",
+  "class": "index-section index-section--flush",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background Image"
+    },
+		{
+			"type": "image_picker",
+			"id": "video_img",
+			"label": "Video Image"
+		},
+		{
+			"type": "checkbox",
+			"id": "show_play",
+			"label": "Show Play icon",
+			"default": false
+		},
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Title",
+      "default": "Leer uw Bitcoin als een professional te beschermen met DC Academy Webinar"
+    },
+    {
+      "type": "html",
+      "id": "list",
+      "label": "Text Field"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Join"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Fullwidth Ad Section"
+      }
+    }
+  ]
+}
+{% endschema %}

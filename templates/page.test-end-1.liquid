@@ -1,0 +1,78 @@
+<style>
+  nav {
+    visibility: hidden;
+  }
+
+  footer {
+    display: none;
+  }
+
+  body {
+    background-color: black;
+    min-height: 100vh;
+  }
+
+  .js-mobile-nav-toggle {
+    display: none;
+  }
+
+  .fullwidth-ad-list li:before {
+    color: #fcbc69;
+    content: '\2713';
+    margin-right: 10px;
+  }
+  .featured-row__subtext p {
+    color: white !important;
+  }
+  #shopify-section-image-with-text-link {
+    margin-bottom: 0 !important;
+  }
+  .feature-row {
+    margin-bottom: 0 !important;
+  }
+</style>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1 class="fs-1 text-white">
+        Onze speciale aanbieding voor jou:</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-6 d-flex flex-column order-2 order-lg-1 justify-content-between">
+      <h1 class="fs-2 color-primary">Dc Academy VIP Community</h1>
+      <ul class="text-white fs-4 fullwidth-ad-list">
+        <li>Dagelijkse updates van de markt </li>
+        <li>Gedetailleerde uitleg over alle fijne kneepjes van het vak</li>
+        <li>24/7 support van het team</li>
+        <li>Directe beantwoording van vraagtekens</li>
+        <li>Informatie over waarom, wanneer en wat te investeren in cryptovaluta.</li>
+        <li>Support voor beginner en gevorderde, jong en oud.</li>
+        <li>Network</li>
+      </ul>
+      <div class="cta-container mt-4">
+        <a href="{{shop.url}}/pages/vip-package">
+          <button class="cta-link btn btn-primary rounded fs-4">97 EURO / MONTH</button>
+        </a>
+      </div>
+    </div>
+    <div class="col-12 col-lg-6 order-1 order-lg-2">
+      <img src="{{ 'test-end-1.png' | asset_img_url: 'master' }}" class="img-responsive">
+    </div>
+  </div>
+</div>
+<div class="container-fluid bg-dark text-white">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center text-white pt-5">
+        <h1 class="fs-1">Andere tutorials waarin u mogelijk
+          geïnteresseerd bent</h1>
+        <p class="fw-bold text-white">
+          De hellingen van het onderwijs verkennen, zelfs zonder kennis en ervaring</p>
+      </div>
+    </div>
+  </div>
+  {% section 'image-with-text-link' %}
+  {% section 'image-with-text-link-copy' %}
+</div>
