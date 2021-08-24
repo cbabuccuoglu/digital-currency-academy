@@ -9265,3 +9265,7 @@ hr {
 .bg-black {
 	background-color: black !important;
 }
+
+.cta-link a {
+	color: white !important;
+}
