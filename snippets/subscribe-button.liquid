@@ -1,0 +1,18 @@
+{% comment %} 
+  Requires three values as liquid variables while rendering: 
+   - Product variant id {{ variant_id }}, example: 40438330032326
+   - Seal Subscriptions selling plan id {{ selling_plan }}, example: three months - 566362310, monthly - 566329542
+   - Button Text {{ button_text }}
+{% endcomment %}
+
+<form method="post" action="/cart/add">
+  <input type="hidden" name="id" value="{{ variant_id }}" />
+  <input type="hidden" name="selling_plan" value="{{ selling_plan }}" />
+  <input type="hidden" name="return_to" value="/checkout/" />
+  <button type="submit" name="add" value="Add To Cart" aria-label="{{ button_text }}" class="cta-link btn btn-primary px-5" data-add-to-cart-text>
+    <span data-add-to-cart-text>{{ button_text }}</span>
+    <span class="hide" data-loader>
+      {% include 'icon-spinner' %}
+    </span>
+  </button>
+</form>
