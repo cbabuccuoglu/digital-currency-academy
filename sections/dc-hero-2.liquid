@@ -6,24 +6,55 @@
     <p class="text-white text-center">
       Til naar een hoger niveau met DC Academy
     </p>
-    <div class="input-group flex-column px-1 px-sm-5">
-      <input type="text" class="border bg-dark border-light rounded text-light" placeholder="E-Mail">
-      <button class="p-3 mt-4 fw-bold rounded border-0 text-uppercase bg-color-primary "><a class="text-white" href="{{shop.url}}/pages/test-q-1">
-        ondtek dc academy
-          trainingen
-      </a></button>
-      <div class="checkbox-group py-4 d-flex flex-row justify-content-center align-content-center gap-3">
+
+    {%- assign formId = 'Contact_' | append: section.id -%}
+    {% form 'customer', id: formId, novalidate: 'novalidate', class: 'contact-form form-single-field' %}
+      {%- if form.posted_successfully? -%}
+        <p class="form-message form-message--success" tabindex="-1" data-form-status>
+          {{ 'general.newsletter_form.confirmation' | t }}
+        </p>
+      {%- endif -%}
+    <div class="input-group {% if form.errors %} input-group--error{% endif %} flex-column px-1 px-sm-5">
+      <input type="hidden" name="contact[tags]" value="newsletter">
+      <input type="email"
+          name="contact[email]"
+          id="{{ formId }}-email"
+          class="{% if form.errors %} input--error{% endif %} border bg-dark border-light rounded text-light"
+          value="{{ form.email }}"
+          placeholder="{{ 'general.newsletter_form.email_placeholder' | t }}"
+          aria-label="{{ 'general.newsletter_form.email_placeholder' | t }}"
+          aria-required="true"
+          autocorrect="off"
+          autocapitalize="off"
+          {% if form.errors %}
+            aria-invalid="true"
+            aria-describedby="{{ formId }}-email-error"
+            data-form-status
+          {% endif %}
+          >
+      <button type="submit" name="commit" class="p-3 mt-4 fw-bold rounded border-0 text-uppercase bg-color-primary"><span>{{ 'general.newsletter_form.submit' | t }}</span></button>
+      {% comment %} <div class="checkbox-group py-4 d-flex flex-row justify-content-center align-content-center gap-3">
         <input class="my-auto" type="checkbox" name="Terms & Conditions" id="newsletterForm"> <label class="text-white"
           for="#newsletterForm">Etkinlikler ve güncel haberler hakkında bilgi almak istiyorum</label>
-      </div>
+      </div> {% endcomment %}
     </div>
+    {%- if form.errors contains 'email' -%}
+      <span id="{{ formId }}-email-error" class="input-error-message">
+        <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
+        {% include 'icon-error' %}
+        <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+      </span>
+    {%- endif -%}
+
+    {% endform %}
+
   </div>
   {% comment %} <div class="col-12 col-lg-6 d-flex flex-row order-1 order-lg-2 p-0 mb-4 mb-lg-0">
     <div class="col-6 pe-1"><img src="{{ section.settings.expert_img_1 | img_url: '700x700' }}" class="rounded" alt=""></div>
     <div class="col-6 ps-1"><img src="{{ section.settings.expert_img_2 | img_url: '700x700' }}" class="rounded" alt=""></div>
   </div> {% endcomment %}
   <div class="col-12 col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
-    <div class="swiper-container">
+    <div class="swiper-container overflow-hidden">
       <div class="swiper-wrapper">
           <div class="swiper-slide"><img src="{{ section.settings.expert_img_1 | img_url: '700x700' }}" class="rounded" alt=""></div>
           <div class="swiper-slide"><img src="{{ section.settings.expert_img_2 | img_url: '700x700' }}" class="rounded" alt=""></div>

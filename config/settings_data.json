@@ -203,9 +203,9 @@
           "show_quantity_selector": false,
           "show_vendor": false,
           "enable_payment_button": true,
-          "show_share_buttons": true,
+          "show_share_buttons": false,
           "media_size": "medium",
-          "enable_image_zoom": true,
+          "enable_image_zoom": false,
           "enable_video_looping": true
         }
       },
@@ -813,7 +813,7 @@
           "video": "https:\/\/www.youtube.com\/watch?v=CwJFEWfJ7tQ",
           "text": "<p>DC Academy is opgericht om te leren hoe je geld kunt verdienen met cryptocurrencies. Volgens analisten van <br\/>DC Academy geld verdienen met cryptocurrencies; de juiste strategie en mindset baan.<br\/><br\/>Word lid van de dc academy-groep om je eigen strategie en mindset te ontwikkelen.<br\/><br\/><strong>Vraag je je af hoe je moet beginnen?<br\/><br\/>Word lid van het gratis discord-kanaal via de onderstaande knop.<\/strong><\/p>",
           "button_text": "Ik wil hierbij zijn!",
-          "button_url": "#"
+          "button_url": "shopify:\/\/pages\/vip-package"
         }
       },
       "16292692237f9a3cb9": {

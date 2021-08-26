@@ -11,7 +11,7 @@
   <div class="container text-center">
     {{ section.settings.text }}
 		<div class="cta-container mt-2 text-center">
-			<button href="{{ section.settings.button_url }}" class="cta-link btn btn-primary px-5">{{ section.settings.button_text | escape }}</button>
+			<button class="cta-link btn btn-primary px-5"><a href="{{ section.settings.button_url }}">{{ section.settings.button_text | escape }}</a></button>
 		</div>
   </div>
 </div>

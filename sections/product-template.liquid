@@ -217,15 +217,8 @@
                 {%- if section.settings.enable_payment_button %} product-form__item--payment-button {%- endif -%}
                 {%- if product.has_only_default_variant %} product-form__item--no-variants {%- endif -%}"
               >
-              <div class="sealsubs-target-element" data-product="{{ product | json | escape }}" data-handle="{{ product.handle }}"></div>
-              <style>
-              .sls-purchase-options-container {
-                border: none !important;
-              }
-              .sealsubs-container .sls-purchase-options-container .sls-option-container, .sealsubs-container .sls-purchase-options-container .sls-option-container.sls-active {
-                border: none !important;
-              }
-              </style>
+              {% render 'seal-subscriptions-plans' %}
+                <input type="hidden" name="return_to" value="/checkout/" />
                 <button type="submit" name="add"
                   {% unless current_variant.available %} aria-disabled="true"{% endunless %}
                   aria-label="{% unless current_variant.available %}{{ 'products.product.sold_out' | t }}{% else %}{{ 'products.product.add_to_cart' | t }}{% endunless %}"
