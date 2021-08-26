@@ -26,7 +26,7 @@
 
 <section class="book-expert my-5">
   <div class="container">
-    <div class="row border rounded">
+    <div class="row border rounded shadow">
       <div class="col-xl-4 col-12 p-0">
         <img src="{{ section.settings.image | img_url: '700x700' }}" alt="" class="img-responsive w-100">
       </div>
@@ -38,9 +38,9 @@
         <button class="cta-link btn btn-primary mx-5 mb-3 expert-button"><a href="{{ section.settings.button_link }}">{{ section.settings.button_text }}</a></button>
         <div class="attendees p-3 row border-top gap-sm-3 gap-md-0">
                   <div class="w-auto thumb-container">
-                    <span class="thumbnail"><img src="https://via.placeholder.com/50x50" alt="thumb" class="rounded-circle"></span>
-                    <span class="thumbnail"><img src="https://via.placeholder.com/50x50" alt="thumb" class="rounded-circle"></span>
-                    <span class="thumbnail"><img src="https://via.placeholder.com/50x50" alt="thumb" class="rounded-circle"></span>
+                    <span class="thumbnail"><img src="{{ 'thumb-1.png' | asset_img_url: '50x50' }}" alt="thumb" class="rounded-circle"></span>
+                    <span class="thumbnail"><img src="{{ 'thumb-2.png' | asset_img_url: '50x50' }}" alt="thumb" class="rounded-circle"></span>
+                    <span class="thumbnail"><img src="{{ 'thumb-3.png' | asset_img_url: '50x50' }}" alt="thumb" class="rounded-circle"></span>
                   </div>
                     <div class="attendees-count-container w-auto my-auto">
                       45 people are attending this event

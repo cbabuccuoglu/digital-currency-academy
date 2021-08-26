@@ -31,7 +31,7 @@
     </div>
 
     <div class="container">
-      <div class="row list-container p-4 lh-lg border rounded">
+      <div class="row list-container p-4 lh-lg border rounded shadow">
         <div class="col-12 col-lg-6">
           <ul>
             <li>1. Dagelijkse updates van de markt </li>
@@ -73,43 +73,7 @@
       </div>
     </div>
 
-  <div class="container">
-    <div class="row px-5 justify-content-center ">
-      <div class="bg-box col-lg-6 col-md-6 col-sm-12 col-xs-12 px-0 my-auto">
-        <div class="bg-box-child rounded text-center px-0 float-right border">
-          <div class="px-1 px-md-5 bg-box-padding">
-            <h4 class="fs-3 border-bottom border-dark text-secondary py-3 px-4 text-nowrap">VIP Packages</h4>
-            <p class="font-weight-bold py-3 px-4">Word lid van de DC Community en leer alle geheimen van crypto traden
-            </p>
-            <h1 class="fs-1 pb-3 px-4 text-nowrap">€ 97/Month</h1>
-          </div>
-          <div class="cta-container mt-2 text-center py-4 bg-light">
-            <button href="#" class="cta-link btn btn-primary px-5">Koop Mu</button>
-          </div>
-        </div>
-      </div>
-      <div class="featured-box col-lg-6 col-md-6 col-sm-12 col-xs-12 px-0">
-        <div class="rounded text-center px-0 my-0 py-0 border"
-          style="border-color: #FBBD69 !important; border-width: 2px !important; border-radius: 10px !important;">
-          <h4 class="fs-3 text-white py-5 px-1" style="background-color: #FBBD69;">VIP Gouden Packages</h4>
-          <p class="font-weight-bold py-3 px-1 px-md-5">Word lid van de DC Community en leer alle geheimen van crypto traden</p>
-          <h1 class="fs-1 pb-3 px-1">€ 249/Month</h1>
-          <div class="cta-container mt-2 text-center py-4 bg-light"
-            style="border-radius: 0 0 10px 10px; overflow: hidden;">
-            <button href="#" class="cta-link btn btn-primary px-5">Koop Mu</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row px-5 justify-content-center mt-4">
-      <div class="col-lg-6 col-md-6 col-12 col-sm-12 col-xs-12 payment-icons-custom my-4 border-end border-dark">
-        <img src="{{ 'payment-icons.png' | asset_img_url:'master' }}" class="img-responsive">
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 payment-security-custom my-4">
-        <img src="{{ 'payment-security.png' | asset_img_url:'master' }}" class="img-responsive">
-      </div>
-    </div>
-  </div>
+{% render 'packages-duo' %}
     <!--  -->
 
     {% render 'accordion-courses-community' %}
@@ -212,7 +176,7 @@
     </style>
 
     <div class="book-expert container">
-      <div class="row border rounded ">
+      <div class="row border rounded shadow">
         <div class="col-xl-4 col-12 p-0">
           <img src="{{ 'one-to-one.jpg' | asset_img_url: '700x700' }}" alt="" style="object-fit: cover" class="w-100">
         </div>

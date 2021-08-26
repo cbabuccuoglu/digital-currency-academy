@@ -2,8 +2,8 @@
   <div class="container relative text-center">
     <h4 class="color-primary">{{ section.settings.uptitle | escape }}</h4>
     <h1 class="text-white">{{ section.settings.title | escape }}</h1>
-    <div class="ratio ratio-16x9 text-center mt-4">
-      <iframe class="rounded border border-light" src="https://www.youtube.com/embed/{{ section.settings.video.id }}?rel=0" allowfullscreen></iframe>
+    <div class="ratio ratio-16x9 text-center mt-4 rounded border border-light shadow-lg">
+      <iframe src="https://www.youtube.com/embed/{{ section.settings.video.id }}?rel=0" allowfullscreen></iframe>
     </div>
   </div>
 </div>

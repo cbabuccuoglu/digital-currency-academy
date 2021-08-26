@@ -1,0 +1,64 @@
+<style>
+  @media screen and (max-width: 749px) {
+    .bg-box {
+      padding-left: 0 !important;
+    }
+
+    .bg-box-child {
+      float: none !important;
+    }
+
+    .bg-box-padding {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+
+    .featured-box {
+      padding-right: 0 !important;
+    }
+    .payment-icons-custom {
+      /* padding-bottom: 2rem !important; */
+      border: 0 !important;
+    }
+  }
+</style>
+
+<div id="packages" class="packages-duo">
+  <div class="container">
+    <div class="row px-5 justify-content-center">
+      <div class="bg-box col-lg-6 col-md-6 col-sm-12 col-xs-12 px-0 my-auto">
+        <div class="bg-box-child rounded text-center px-0 float-right border shadow">
+          <div class="px-1 px-md-5 bg-box-padding">
+            <h4 class="fs-3 border-bottom border-dark text-secondary py-3 px-4 text-nowrap">VIP Packages</h4>
+            <p class="font-weight-bold py-3 px-4">Word lid van de DC Community en leer alle geheimen van crypto traden
+            </p>
+            <h1 class="fs-1 pb-3 px-4 text-nowrap">€ 97/Month</h1>
+          </div>
+          <div class="cta-container mt-2 text-center py-4 bg-light">
+            {% render 'subscribe-button', variant_id: '40438330032326', selling_plan: '566329542', button_text: 'Koop Mu' %}
+          </div>
+        </div>
+      </div>
+      <div class="featured-box col-lg-6 col-md-6 col-sm-12 col-xs-12 px-0">
+        <div class="rounded text-center px-0 my-0 py-0 border shadow"
+          style="border-color: #FBBD69 !important; border-width: 2px !important; border-radius: 10px !important;">
+          <h4 class="fs-3 text-white py-5 px-1" style="background-color: #FBBD69;">VIP Gouden Packages</h4>
+          <p class="font-weight-bold py-3 px-1 px-md-5">Word lid van de DC Community en leer alle geheimen van crypto traden</p>
+          <h1 class="fs-1 pb-3 px-1">€ 249/Month</h1>
+          <div class="cta-container mt-2 text-center py-4 bg-light"
+            style="border-radius: 0 0 10px 10px; overflow: hidden;">
+            {% render 'subscribe-button', variant_id: '40438330032326', selling_plan: '566362310', button_text: 'Koop Mu' %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row px-5 justify-content-center mt-4">
+      <div class="col-lg-6 col-md-6 col-12 col-sm-12 col-xs-12 payment-icons-custom my-4 border-end border-dark">
+        <img src="{{ 'payment-icons.png' | asset_img_url:'master' }}" class="img-responsive">
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 payment-security-custom my-4">
+        <img src="{{ 'payment-security.png' | asset_img_url:'master' }}" class="img-responsive">
+      </div>
+    </div>
+  </div>
+</div>
