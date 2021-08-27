@@ -1,0 +1,123 @@
+<div class="exit-intent-popup d-none d-lg-block">
+  <div class="buy-vip bg-white rounded">
+      <div class="row justfiy-content-center align-items-center pb-4">
+        <div class="popup-wrapper d-flex flex-column">
+          <div class="popup-video">
+            <div class="ratio ratio-16x9 text-center rounded">
+              <iframe src="https://www.youtube.com/embed/CwJFEWfJ7tQ?rel=0" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="popup-text text-center p-4">
+            <h2 class="">Join DC Academy with VIP Package, learn to make the right decisions</h2>
+            <p>Discover all the ins and outs of crypto trading and develop the right strategy and mindset to get your
+              money moving digitally!</p>
+          </div>
+          {% render 'subscribe-button', variant_id: '40438330032326', selling_plan: '566329542', button_text: '€97 / Month' %}
+        </div>
+      </div>
+  </div>
+  <div class="close-popup">
+    {% render 'icon-close' %}
+  </div>
+</div>
+
+<style>
+  .exit-intent-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99999;
+    background: rgba(33, 33, 33, 0.8);
+    transform: translateY(60%) scale(0);
+    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+
+  .exit-intent-popup.visible {
+    transform: translateY(0) scale(1);
+  }
+
+  .exit-intent-popup .buy-vip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .close-popup {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 3rem;
+    padding: 1rem;
+    background-color: #fcbc69;
+    color: white;
+  }
+
+</style>
+
+<script>
+
+  const CookieService = {
+
+    setCookie(name, value, days) {
+      let expires = '';
+
+      if (days) {
+        const date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = '; expires=' + date.toUTCString();
+      }
+
+      document.cookie = name + '=' + (value || '') + expires + ';';
+    },
+
+    getCookie(name) {
+      const cookies = document.cookie.split(';');
+
+      for (const cookie of cookies) {
+        if (cookie.indexOf(name + '=') > -1) {
+          return cookie.split('=')[1];
+        }
+      }
+
+      return null;
+    }
+  };
+
+  const mouseEvent = e => {
+    const shouldShowExitIntent =
+      !e.toElement &&
+      !e.relatedTarget &&
+      e.clientY < 10;
+
+    if (shouldShowExitIntent) {
+      document.removeEventListener('mouseout', mouseEvent);
+      document.querySelector('.exit-intent-popup').classList.add('visible');
+
+      // Set the cookie when the popup is shown to the user
+      CookieService.setCookie('exitIntentShown', true, 30);
+    }
+  };
+
+  const exit = e => {
+    const shouldExit =
+      [...e.target.classList].includes('exit-intent-popup') || // user clicks on mask
+      e.target.className === 'close-popup' || // user clicks on the close icon
+      e.keyCode === 27; // user hits escape
+
+    if (shouldExit) {
+      document.querySelector('.exit-intent-popup').classList.remove('visible');
+    }
+  };
+
+  if (!CookieService.getCookie('exitIntentShown')) {
+    setTimeout(() => {
+      document.addEventListener('mouseout', mouseEvent);
+      document.addEventListener('keydown', exit);
+    }, 10_000);
+  };
+
+</script>
