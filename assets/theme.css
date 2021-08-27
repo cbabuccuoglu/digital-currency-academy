@@ -9269,3 +9269,6 @@ hr {
 .cta-link a {
 	color: white !important;
 }
+.footer-wrapper {
+	margin-bottom: 0;
+}
