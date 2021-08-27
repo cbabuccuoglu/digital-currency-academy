@@ -192,7 +192,7 @@
         "settings": {
           "show_payment_icons": true,
           "color_footer_bg": "#202b36",
-          "color_footer_text": "#ffffff",
+          "color_footer_text": "#ffc16d",
           "show_locale_selector": false,
           "show_currency_selector": false
         }
@@ -259,9 +259,20 @@
         "blocks": {
           "505df294-483b-4dd4-b926-9724947b0d39": {
             "type": "html",
+            "disabled": true,
             "settings": {
               "code": "<div class=\"text-center\">\n<h1 class=\"fw-bold lh-lg\">Cryptosignalen Ontvangen<\/h1>\n<p>Hoe begin je met traden? Welk exchange platform is het beste? Welke altcoins zijn goed om te hebben?\n<\/p>\n<p>Hoeveel moet je in bitcoin investeren? Alles, maar dan ook echt alles, wordt gedeeld in onze \npraktische en uitgebreide trading en crypto cursus.\n<\/p>\n<p>Now let’s make some cash<\/p>\n<\/div>",
               "width": "100%"
+            }
+          },
+          "6c30a77a-babe-4922-8221-e85250627f8a": {
+            "type": "text",
+            "settings": {
+              "title": "Cryptosignalen Ontvangen",
+              "text": "<p><\/p><p>Hoe begin je met traden? Welk exchange platform is het beste? Welke altcoins zijn goed om te hebben?<\/p><p><br\/>Hoeveel moet je in bitcoin investeren? Alles, maar dan ook echt alles, wordt gedeeld in onze <br\/>praktische en uitgebreide trading en crypto cursus.<\/p><p><br\/><strong>Now let’s make some cash<\/strong><\/p>",
+              "width": "100%",
+              "alignment": "top-middle",
+              "align_text": "center"
             }
           },
           "1628072929d53a95b4-1": {
@@ -275,25 +286,8 @@
         },
         "block_order": [
           "505df294-483b-4dd4-b926-9724947b0d39",
+          "6c30a77a-babe-4922-8221-e85250627f8a",
           "1628072929d53a95b4-1"
-        ],
-        "settings": {
-          "title": ""
-        }
-      },
-      "1628072968bf287453": {
-        "type": "custom-content",
-        "blocks": {
-          "9a793d73-ed13-4ff2-bda8-6fe7627fed48": {
-            "type": "html",
-            "settings": {
-              "code": "<div class=\"text-center\">\n<h4 class=\"color-primary\">\nWord nu lid van de DC Community!<\/h4>\n<h1>Bekijk wat de dc academy-community \nte zeggen heeft en win<\/h1>\n<\/div>",
-              "width": "100%"
-            }
-          }
-        },
-        "block_order": [
-          "9a793d73-ed13-4ff2-bda8-6fe7627fed48"
         ],
         "settings": {
           "title": ""
@@ -343,19 +337,10 @@
       "162820340071f67cda": {
         "type": "packages-duo",
         "settings": {
-          "full_width": false,
-          "section_title": "",
-          "text": "",
-          "text_size": "medium"
-        }
-      },
-      "1628257466f3666e35": {
-        "type": "rich-text",
-        "settings": {
-          "full_width": false,
-          "section_title": "",
-          "text": "<p>Volg de beste crypto cursus, sluit je aan bij de DC Community <a href=\"#\" title=\"#\">Click Here<\/a>.<\/p>",
-          "text_size": "medium"
+          "vip_package_title": "Cryptocurrency beginnen met geld verdienen.",
+          "vip_package_price": "€ 97 \/ Month",
+          "vip_gouden_package_title": "Krijg prijsvoordeel met het  3-maandenpakket.",
+          "vip_gouden_package_price": "€ 249 \/ Month"
         }
       },
       "rich-text": {
@@ -405,7 +390,7 @@
           "cf1954e8-e0df-472a-aab9-ff0aeaf5610b": {
             "type": "html",
             "settings": {
-              "code": "<div class=\"container\">\n      <div class=\"row list-container p-4 lh-lg border rounded\">\n        <div class=\"col-12 col-lg-6\">\n          <ul>\n            <li>1. Zoek uit wat de grafieken betekenen<\/li>\n            <li>2. Informatie uitwisselen met mensen met \ndezelfde mindset<\/li>\n          <\/ul>\n        <\/div>\n        <div class=\"col-12 col-lg-6\">\n                      <li>3. Verbeter jezelf met 1 crypto workout \nper dag<\/li>\n            <li>4. Doe mee aan gratis mindset-webinars<\/li>\n        <\/div>\n      <\/div>\n    <\/div>",
+              "code": "<div class=\"container\">\n      <div class=\"row list-container p-4 lh-lg border rounded shadow\">\n        <div class=\"col-12 col-lg-6\">\n          <ul>\n            <li>1. Zoek uit wat de grafieken betekenen<\/li>\n            <li>2. Informatie uitwisselen met mensen met \ndezelfde mindset<\/li>\n          <\/ul>\n        <\/div>\n        <div class=\"col-12 col-lg-6\">\n                      <li>3. Verbeter jezelf met 1 crypto workout \nper dag<\/li>\n            <li>4. Doe mee aan gratis mindset-webinars<\/li>\n        <\/div>\n      <\/div>\n    <\/div>",
               "width": "100%"
             }
           },
@@ -489,15 +474,6 @@
           "image": "shopify:\/\/shop_images\/tv_pc_telefon_tablet_kolaji.png"
         }
       },
-      "packages-single-table": {
-        "type": "packages-single-table",
-        "settings": {
-          "full_width": false,
-          "section_title": "Talk about your brand",
-          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-          "text_size": "medium"
-        }
-      },
       "package-box": {
         "type": "package-box",
         "settings": {
@@ -572,12 +548,60 @@
       },
       "packages-single-table-vip": {
         "type": "packages-single-table-vip",
-        "settings": {
-          "full_width": false,
-          "section_title": "Talk about your brand",
-          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-          "text_size": "medium"
-        }
+        "blocks": {
+          "6a484829-8fcf-4202-a5ad-40789ce71376": {
+            "type": "text",
+            "settings": {
+              "bullet": "Dagelijkse updates van de markt"
+            }
+          },
+          "2e412c35-df34-4437-ac78-6408e7709c40": {
+            "type": "text",
+            "settings": {
+              "bullet": "Gedetailleerde uitleg over alle fijne kneepjes  van het vak"
+            }
+          },
+          "073b96b0-dc7c-4060-90d0-a42a0febaf99": {
+            "type": "text",
+            "settings": {
+              "bullet": "24\/7 support van het team"
+            }
+          },
+          "44fe8885-df54-4054-8fb1-66826f0306f9": {
+            "type": "text",
+            "settings": {
+              "bullet": "Directe beantwoording van vraagtekens"
+            }
+          },
+          "07b06f3f-d9b9-41f8-9350-e096acd33212": {
+            "type": "text",
+            "settings": {
+              "bullet": "Informatie over waarom, wanneer en wat te investeren in cryptovaluta."
+            }
+          },
+          "460eab34-5108-46eb-a0f9-b090e28c2798": {
+            "type": "text",
+            "settings": {
+              "bullet": "Support voor beginner en gevorderde, jong en oud."
+            }
+          },
+          "a52616b0-19ec-44f8-8fd7-5ab3d36e4505": {
+            "type": "text",
+            "settings": {
+              "bullet": "Network"
+            }
+          }
+        },
+        "block_order": [
+          "6a484829-8fcf-4202-a5ad-40789ce71376",
+          "2e412c35-df34-4437-ac78-6408e7709c40",
+          "073b96b0-dc7c-4060-90d0-a42a0febaf99",
+          "44fe8885-df54-4054-8fb1-66826f0306f9",
+          "07b06f3f-d9b9-41f8-9350-e096acd33212",
+          "460eab34-5108-46eb-a0f9-b090e28c2798",
+          "a52616b0-19ec-44f8-8fd7-5ab3d36e4505"
+        ],
+        "settings": {}
       },
       "package-box-vip": {
         "type": "package-box-vip",
@@ -799,10 +823,11 @@
       "16292296293d8ece84": {
         "type": "dc-hero-2",
         "settings": {
+          "subtitle": "Til naar een hoger niveau met DC Academy",
           "title": "VANDAAG IS DIE DAG.",
-          "expert_img_1": "shopify:\/\/shop_images\/ferrah_92e5e623-3121-4887-90de-cb842010a9a8.png",
-          "expert_img_2": "shopify:\/\/shop_images\/CRYPTOSDADKL.png",
-          "expert_img_3": "shopify:\/\/shop_images\/faissal_1d072520-31fc-48a2-882e-e1775df2a5e3.png"
+          "expert_img_1": "shopify:\/\/shop_images\/hero-3.png",
+          "expert_img_2": "shopify:\/\/shop_images\/hero-1.png",
+          "expert_img_3": "shopify:\/\/shop_images\/hero-2.png"
         }
       },
       "16292681134fac132f": {
@@ -847,12 +872,60 @@
       },
       "1629290522f331143e": {
         "type": "packages-single-table-vip",
-        "settings": {
-          "full_width": false,
-          "section_title": "Talk about your brand",
-          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-          "text_size": "medium"
-        }
+        "blocks": {
+          "0d6839f9-b49e-4acc-99b2-7936d3ed8012": {
+            "type": "text",
+            "settings": {
+              "bullet": "Dagelijkse updates van de markt"
+            }
+          },
+          "415d7e67-3251-4314-b863-a09fb1b2b803": {
+            "type": "text",
+            "settings": {
+              "bullet": "Gedetailleerde uitleg over alle fijne kneepjes  van het vak"
+            }
+          },
+          "df718dc6-40af-42f7-8a93-cb57b091e4cb": {
+            "type": "text",
+            "settings": {
+              "bullet": "24\/7 support van het team"
+            }
+          },
+          "299c178d-8891-45c1-a310-c6002a712be4": {
+            "type": "text",
+            "settings": {
+              "bullet": "Directe beantwoording van vraagtekens"
+            }
+          },
+          "289d8887-4edb-4920-b74c-b4573f116ee2": {
+            "type": "text",
+            "settings": {
+              "bullet": "Informatie over waarom, wanneer en wat te investeren in cryptovaluta."
+            }
+          },
+          "c00af251-4ab5-44d3-ab60-76a7a9f4b477": {
+            "type": "text",
+            "settings": {
+              "bullet": "Support voor beginner en gevorderde, jong en oud."
+            }
+          },
+          "7ab8f592-45c1-4bff-8f18-6a6c988fa1e0": {
+            "type": "text",
+            "settings": {
+              "bullet": "Network"
+            }
+          }
+        },
+        "block_order": [
+          "0d6839f9-b49e-4acc-99b2-7936d3ed8012",
+          "415d7e67-3251-4314-b863-a09fb1b2b803",
+          "df718dc6-40af-42f7-8a93-cb57b091e4cb",
+          "299c178d-8891-45c1-a310-c6002a712be4",
+          "289d8887-4edb-4920-b74c-b4573f116ee2",
+          "c00af251-4ab5-44d3-ab60-76a7a9f4b477",
+          "7ab8f592-45c1-4bff-8f18-6a6c988fa1e0"
+        ],
+        "settings": {}
       },
       "16292909671578827a": {
         "type": "image-with-text-link",
@@ -945,10 +1018,10 @@
       "packages-duo": {
         "type": "packages-duo",
         "settings": {
-          "full_width": false,
-          "section_title": "Talk about your brand",
-          "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
-          "text_size": "medium"
+          "vip_package_title": "Word lid van de DC Academy Community en ontvang  Cryptocurrency beginnen met geld verdienen.",
+          "vip_package_price": "€ 97 \/ Month",
+          "vip_gouden_package_title": "Krijg prijsvoordeel met het  3-maandenpakket.",
+          "vip_gouden_package_price": "€ 249 \/ Month"
         }
       },
       "image-with-text-link": {
@@ -976,6 +1049,8 @@
       "162949092540303dc1": {
         "type": "gains-slideshow",
         "settings": {
+          "colored_title": "Word nu lid van de DC-community!",
+          "title": "Bekijk wat de dc academy-community  te zeggen heeft en win",
           "slide_1": "shopify:\/\/shop_images\/reviews1.png",
           "slide_2": "shopify:\/\/shop_images\/reviews2.png",
           "slide_3": "shopify:\/\/shop_images\/reviews3.png"
@@ -984,6 +1059,8 @@
       "gains-slideshow": {
         "type": "gains-slideshow",
         "settings": {
+          "colored_title": "Word nu lid van de DC-community!",
+          "title": "Wat gebeurt er in de DC Academy  VIP Community? bekijk beschrijvingen en prestaties",
           "slide_1": "shopify:\/\/shop_images\/reviews1.png",
           "slide_2": "shopify:\/\/shop_images\/reviews2.png",
           "slide_3": "shopify:\/\/shop_images\/reviews3.png"
@@ -1007,8 +1084,6 @@
       "162817385513cbd239",
       "1628072929d53a95b4",
       "162820340071f67cda",
-      "1628072968bf287453",
-      "1628257466f3666e35",
       "162949092540303dc1"
     ]
   },
