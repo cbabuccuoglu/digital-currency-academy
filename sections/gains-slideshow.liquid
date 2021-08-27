@@ -1,14 +1,26 @@
 <div class="container">
+  <div class="row text-center">
+    <div class="col-12">
+      <h4 class="color-primary">{{ section.settings.colored_title | escape }}</h4>
+    </div>
+    <div class="row text-center">
+      <div class="col-12">
+        <h1>{{ section.settings.title | escape }}</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
   <div class="row justify-content-center">
     <div class="col-12" style="max-width: 1200px">
       <div class="swiper-container-gains overflow-hidden">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="{{ section.settings.slide_1 | img_url: 'master' }}" class="img-responsive rounded"
-              alt=""></div>
-          <div class="swiper-slide"><img src="{{ section.settings.slide_2 | img_url: 'master' }}" class="img-responsive rounded"
-              alt=""></div>
-          <div class="swiper-slide"><img src="{{ section.settings.slide_3 | img_url: 'master' }}" class="img-responsive rounded"
-              alt=""></div>
+          <div class="swiper-slide"><img src="{{ section.settings.slide_1 | img_url: 'master' }}"
+              class="img-responsive rounded" alt=""></div>
+          <div class="swiper-slide"><img src="{{ section.settings.slide_2 | img_url: 'master' }}"
+              class="img-responsive rounded" alt=""></div>
+          <div class="swiper-slide"><img src="{{ section.settings.slide_3 | img_url: 'master' }}"
+              class="img-responsive rounded" alt=""></div>
         </div>
       </div>
     </div>
@@ -26,7 +38,7 @@
     direction: 'horizontal',
     loop: true,
     centeredSlides: true,
-    }
+  }
   );
 </script>
 
@@ -35,6 +47,17 @@
     "name": "Gains Slider",
     "class": "index-section",
     "settings": [
+      {
+        "type": "text",
+        "id": "colored_title",
+        "label": "Accented Title",
+        "default": "DC Academy"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
       {
         "type": "image_picker",
         "id": "slide_1",
