@@ -5,7 +5,7 @@
    - Button Text {{ button_text }}
 {% endcomment %}
 
-<form method="post" action="/cart/add">
+<form method="post" action="/cart/add" class="d-flex justify-content-center align-items-center">
   <input type="hidden" name="id" value="{{ variant_id }}" />
   <input type="hidden" name="selling_plan" value="{{ selling_plan }}" />
   <input type="hidden" name="return_to" value="/checkout/" />

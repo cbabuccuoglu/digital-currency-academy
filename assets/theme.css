@@ -9269,3 +9269,12 @@ hr {
 .cta-link a {
 	color: white !important;
 }
+.footer-wrapper {
+	margin-bottom: 0;
+}
+
+.cta-link:hover a {
+
+	transition: all 0.5s;
+	color: black !important;
+}

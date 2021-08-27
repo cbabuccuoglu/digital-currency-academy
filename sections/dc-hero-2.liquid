@@ -4,17 +4,17 @@
       {{ section.settings.title | escape }}
     </h1>
     <p class="text-white text-center">
-      Til naar een hoger niveau met DC Academy
+      {{ section.settings.subtitle | escape }}
     </p>
 
     {%- assign formId = 'Contact_' | append: section.id -%}
-    {% form 'customer', id: formId, novalidate: 'novalidate', class: 'contact-form form-single-field' %}
+    {% form 'customer', id: formId, novalidate: 'novalidate', class: 'contact-form form-single-field px-1 px-sm-5' %}
       {%- if form.posted_successfully? -%}
         <p class="form-message form-message--success" tabindex="-1" data-form-status>
           {{ 'general.newsletter_form.confirmation' | t }}
         </p>
       {%- endif -%}
-    <div class="input-group {% if form.errors %} input-group--error{% endif %} flex-column px-1 px-sm-5">
+    <div class="input-group {% if form.errors %} input-group--error{% endif %} flex-column">
       <input type="hidden" name="contact[tags]" value="newsletter">
       <input type="email"
           name="contact[email]"
@@ -87,6 +87,11 @@ const swiper = new Swiper('.swiper-container', {
 "name": "DC Hero 2",
 "class": "index-section index-section--flush container-fluid bg-black",
 "settings": [
+  {
+    "type": "text",
+    "id": "subtitle",
+    "label": "Subtitle"
+  },
 {
 "type": "text",
 "id": "title",
