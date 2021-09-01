@@ -80,18 +80,18 @@
   <div class="row d-block d-md-none">
     <div class="col-12 border rounded p-0">
       <div class="text-center overflow-hidden">
-        <div class="row table-row-flex">
+        <div class="row table-row-flex justify-content-center">
           <div class="col-6 fs-s-3 fs-xs-4 px-s-2 px-xs-3 py-3 border-bottom border-primary">VIP Membership</div>
         </div>
         {% for block in section.blocks %}
-        <div class="row table-row-flex">
+        <div class="row table-row-flex justify-content-center">
           <div class="col-12 p-3">
             {{ forloop.index }}. {{ block.settings.bullet | escape }}
           </div>
           <div class="col-6 pb-3"><img width="20px" src="{{ 'table-checkmark.svg' | asset_url }}" alt=""></div>
         </div>
         {% endfor %}
-        <div class="row table-row-flex">
+        <div class="row table-row-flex justify-content-center">
           <div class="col-6">
                 <div class="cta-container py-4">{% render 'subscribe-button', variant_id: '40438330032326', selling_plan: '566329542', button_text: '€97 / Month' %}</div>
             </div>

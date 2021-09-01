@@ -23,7 +23,7 @@
           "main_linklist": "main-menu",
           "message": true,
           "home_page_only": true,
-          "message_text": "<span class=\"color-primary\">niev: <\/span>een-op-een crypto trading training",
+          "message_text": "<span class=\"color-primary\">Nieuw: <\/span>een-op-een crypto trading training",
           "message_link": "https:\/\/beta.dcacademy.nl\/pages\/courses-community#crypto",
           "message_link_text": "BEGIN NU",
           "color_bg": "#ffffff",
@@ -824,7 +824,7 @@
         "type": "dc-hero-2",
         "settings": {
           "subtitle": "Til naar een hoger niveau met DC Academy",
-          "title": "VANDAAG IS DIE DAG.",
+          "title": "Til vandaag nog uw crypto niveau naar een hoger niveau met dc academy",
           "expert_img_1": "shopify:\/\/shop_images\/hero-3.png",
           "expert_img_2": "shopify:\/\/shop_images\/hero-1.png",
           "expert_img_3": "shopify:\/\/shop_images\/hero-2.png"
@@ -845,8 +845,8 @@
         "type": "rich-text",
         "settings": {
           "full_width": true,
-          "section_title": "Hoe leren we strategie en mindset?",
-          "text": "<p>Mentaliteit is visiewerk. Je verbreedt je visie door interactie met mensen die zijn doorgegroeid naar het niveau dat je wilt zijn. dit verandert je mindset en je begint nieuwe kansen en voordelen te krijgen.<\/p>",
+          "section_title": "Hoe leer ik een trading strategie en creëer ik de beste mindset",
+          "text": "<p>Mentaliteit is visiewerk. Je verbreedt je visie door interactie met mensen die zijn doorgegroeid naar het niveau waar jij ook wilt zijn. <\/p><p>Dit veranderdt je mindset en je begint nieuwe kansen en voordelen te krijgen.<\/p>",
           "text_size": "large"
         }
       },
@@ -985,6 +985,7 @@
         "blocks": {
           "5120ca4c-68e5-4357-a0f6-1fb768ae466d": {
             "type": "html",
+            "disabled": true,
             "settings": {
               "code": "<h1 class=\"pt-4 text-center\">Met DC Academy Crypto Training \nleer geld verdienen<\/h1>",
               "width": "100%"
@@ -993,7 +994,7 @@
           "af04c130-bc3b-4c17-9a85-b269611e6188": {
             "type": "text",
             "settings": {
-              "title": "",
+              "title": "Met DC Academy Crypto Training  leer geld verdienen",
               "text": "<p>DC Academy-analisten delen hun expertise en ervaring in DC Academy-trainingen.<br\/>ze blijven doorgaan. Dankzij hen kun je beginnen met geld verdienen met bitcoin en andere cryptocurrencies.<\/p><p><a href=\"#\" title=\"#\"><strong>Crypto Training<\/strong><\/a><strong> die je naar een hoger niveau tillen<\/strong><\/p>",
               "width": "100%",
               "alignment": "center",
