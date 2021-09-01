@@ -8,7 +8,7 @@
     </p>
 
     {%- assign formId = 'Contact_' | append: section.id -%}
-    {% form 'customer', id: formId, novalidate: 'novalidate', class: 'contact-form form-single-field px-1 px-sm-5' %}
+    {% form 'customer', id: formId, class: 'contact-form form-single-field px-1 px-sm-5' %}
       {%- if form.posted_successfully? -%}
         <p class="form-message form-message--success" tabindex="-1" data-form-status>
           {{ 'general.newsletter_form.confirmation' | t }}
@@ -42,7 +42,7 @@
       <span id="{{ formId }}-email-error" class="input-error-message">
         <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
         {% include 'icon-error' %}
-        <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
+        <span class="text-white">{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
       </span>
     {%- endif -%}
 
