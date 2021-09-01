@@ -114,9 +114,15 @@
             <img src="{{ 'united-kingdom.svg' | asset_url }}">
             {% endif %}
           </div> {% endcomment %}
-          <a href="{{ shop.url }}/account/login" class="member-login site-header__icon fw-bold text-white">
-            Login
-          </a>
+          {% if customer %}
+            <a href="{{ shop.url }}/account/" class="member-login site-header__icon fw-bold text-white">
+              Account
+            </a>
+          {% else %}
+            <a href="{{ shop.url }}/account/login" class="member-login site-header__icon fw-bold text-white">
+              Login
+            </a>
+          {% endif %}
 
           {% unless linklists[section.settings.main_linklist] == blank %}
             <button type="button" class="btn--link site-header__icon site-header__menu js-mobile-nav-toggle mobile-nav--open" aria-controls="MobileNav"  aria-expanded="false" aria-label="{{ 'layout.navigation.menu' | t }}">
